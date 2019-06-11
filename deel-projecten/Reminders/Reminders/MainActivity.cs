@@ -80,6 +80,7 @@ namespace Reminders
     public class Reminder
     {
         public int id;
+        public int userid;
         public string text;
         public ReminderType type;
     }
