@@ -20,25 +20,33 @@ namespace Reminders
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.content_main);
 
+            // Get reminders
             var reminder = Stub.GetReminders();
+            // Get linear layout by id
             var lo = FindViewById<LinearLayout>(Resource.Id.linearLayout1);
 
+            // Add ReminderViews to lo
             foreach (var r in reminder)
             {
                 var rem = new ReminderView(lo.Context, r);
-                rem.OnReminder += Rem_OnReminder;
+                rem.OnReminder += OnReminder;
                 lo.AddView(rem);
             }
         }
 
-        private void Rem_OnReminder(int reminderid, string text, ReminderType type)
+        private void OnReminder(Reminder r)
         {
-            Toast.MakeText(this.ApplicationContext, $"Clicked reminder with ID {reminderid} ({text})", ToastLength.Short).Show();
-            Console.WriteLine($"Clicked reminder with ID {reminderid} ({text})");
-            var act = new Intent(this, typeof(ReminderActivity));
-            act.PutExtra("text", text);
-            act.PutExtra("id", reminderid);
+            // Show toast with info
+            Toast.MakeText(this.ApplicationContext, $"Clicked reminder with ID {r.id} ({r.text})", ToastLength.Short).Show();
+            Console.WriteLine($"Clicked reminder with ID {r.id} ({r.text})");
 
+            // Create new intent to show a reminderactivity
+            var act = new Intent(this, typeof(ReminderActivity));
+            // Pass data
+            act.PutExtra("text", r.text);
+            act.PutExtra("id", r.id);
+
+            // start activity
             StartActivity(act);
         }
 
