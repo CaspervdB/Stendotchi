@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="Stendotchi.Stendotchi" android:installLocation="internalOnly">
+	<uses-sdk android:minSdkVersion="23" android:targetSdkVersion="27" />
+	<application android:theme="@style/Theme.MyTheme.Base.NoActionBar" 
+               android:allowBackup="true" 
+               android:icon="@mipmap/icon" 
+               android:label="Stendotchi" 
+               android:roundIcon="@mipmap/ic_launcher_round"
+               android:supportsRtl="true">
+    <activity android:name="MainActivity"
+    android:theme="@style/Theme.MyTheme.Base.NoActionBar"/>
+  </application>
+</manifest>
