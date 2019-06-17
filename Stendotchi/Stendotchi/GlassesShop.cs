@@ -10,7 +10,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 
-namespace ShopProject
+namespace Stendotchi
 {
     [Activity(Label = "Glasses")]
     public class GlassesShop : Activity
