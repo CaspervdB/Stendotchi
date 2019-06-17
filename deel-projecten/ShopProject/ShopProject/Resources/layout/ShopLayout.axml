@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_purple"
+    >
+    <Button
+        android:text="Hats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:clickable="true"
+        android:onClick="hatsClick"
+        android:id="@+id/hats" />
+    <Button
+        android:text="Shirts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:onClick="shirtsClick"
+        android:id="@+id/shirts" />
+    <Button
+        android:text="pants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="80dp"
+        android:clickable="true"
+        android:onClick="pantsClick"
+        android:id="@+id/pants" />
+    <Button
+        android:text="Glasses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="120dp"
+        android:clickable="true"
+        android:onClick="glassesClick"
+        android:id="@+id/glasses"/>
+    <ImageView
+        android:src="@mipmap/Saitama"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/glasses"
+        android:id="@+id/imageView1" />
+    <TextView
+        android:text="Text"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@id/imageView1"
+        android:id="@+id/textViewDbResults" />
+</RelativeLayout>
