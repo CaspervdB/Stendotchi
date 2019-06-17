@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.28307.645
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stendotchi", "Stendotchi\Stendotchi.csproj", "{E669FAF2-BF08-43DD-BCA0-C7B8201CC672}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Home", "..\deel-projecten\Home\Stendotchi\Home.csproj", "{778130AD-2D71-4B0C-A45C-6BC2680C5F7F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShopProject", "..\deel-projecten\ShopProject\ShopProject\ShopProject.csproj", "{30EFE6E4-F2A9-4AFD-B69B-62C77E95DB7B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +19,12 @@ Global
 		{E669FAF2-BF08-43DD-BCA0-C7B8201CC672}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E669FAF2-BF08-43DD-BCA0-C7B8201CC672}.Release|Any CPU.Build.0 = Release|Any CPU
 		{E669FAF2-BF08-43DD-BCA0-C7B8201CC672}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{778130AD-2D71-4B0C-A45C-6BC2680C5F7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{778130AD-2D71-4B0C-A45C-6BC2680C5F7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{778130AD-2D71-4B0C-A45C-6BC2680C5F7F}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{778130AD-2D71-4B0C-A45C-6BC2680C5F7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{778130AD-2D71-4B0C-A45C-6BC2680C5F7F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{778130AD-2D71-4B0C-A45C-6BC2680C5F7F}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{30EFE6E4-F2A9-4AFD-B69B-62C77E95DB7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30EFE6E4-F2A9-4AFD-B69B-62C77E95DB7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30EFE6E4-F2A9-4AFD-B69B-62C77E95DB7B}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{30EFE6E4-F2A9-4AFD-B69B-62C77E95DB7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30EFE6E4-F2A9-4AFD-B69B-62C77E95DB7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30EFE6E4-F2A9-4AFD-B69B-62C77E95DB7B}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
