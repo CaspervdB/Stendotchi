@@ -76,11 +76,6 @@ namespace Stendotchi
             this.Button.Click += Button_Click;
         }
 
-        public ReminderView(Context context, Reminder r) : base(context)
-        {
-            this.r = r;
-        }
-
         private void Button_Click(object sender, EventArgs e)
         {
             // invoke own OnReminder event on click of button
