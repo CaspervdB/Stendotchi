@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    //Buttons and text for sound
+    <TextView
+        android:text="Sound"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/TextSound" />
+    <Button
+        android:text="BGM On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:minHeight="50dp"
+        android:layout_below="@id/TextSound"
+        android:id="@+id/ButtonBGMOn" />
+    <Button
+        android:text="BGM Off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:minHeight="50dp"
+        android:layout_toRightOf="@id/ButtonBGMOn"
+        android:layout_below="@id/TextSound"
+        android:id="@+id/ButtonBGMOff" />
+    <Button
+        android:text="SFX On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:minHeight="50dp"
+        android:layout_below="@id/ButtonBGMOn"
+        android:id="@+id/ButtonSFXOn" />
+    <Button
+        android:text="SFX Off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:minHeight="50dp"
+        android:layout_below="@id/ButtonBGMOff"
+        android:layout_toRightOf="@id/ButtonSFXOn"
+        android:id="@+id/ButtonSFXOff" />
+
+    //Buttons and text for language
+    <TextView
+        android:text="Language"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ButtonSFXOn"
+        android:id="@+id/TextLanguage" />
+    <Button
+        android:text="English"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:minHeight="50dp"
+        android:layout_below="@id/TextLanguage"
+        android:id="@+id/ButtonEnglish" />
+    <Button
+        android:text="Dutch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:minHeight="50dp"
+        android:layout_toRightOf="@id/ButtonEnglish"
+        android:layout_below="@id/TextLanguage"
+        android:id="@+id/ButtonDutch" />
+
+    //Buttons and text for push notificatinos
+    <TextView
+        android:text="Push Notifications"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ButtonEnglish"
+        android:id="@+id/TextNotif" />
+    <Button
+        android:text="On"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:minHeight="50dp"
+        android:layout_below="@id/TextNotif"
+        android:id="@+id/ButtonNotifOn" />
+    <Button
+        android:text="Off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="100dp"
+        android:minHeight="50dp"
+        android:layout_toRightOf="@id/ButtonNotifOn"
+        android:layout_below="@id/TextNotif"
+        android:id="@+id/ButtonNotifOff" />
+
+    //Version Text
+    <TextView
+        android:text="Versie 1.0.0 A"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:layout_below="@id/ButtonNotifOn"
+        android:id="@+id/TextVersion" />
+    </RelativeLayout>
+
+</RelativeLayout>

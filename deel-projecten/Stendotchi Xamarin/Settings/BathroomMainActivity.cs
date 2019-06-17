@@ -8,7 +8,7 @@ using Xamarin.Essentials;
 namespace Settings
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class MainActivity : AppCompatActivity
+    public class BathroomMainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
         {
