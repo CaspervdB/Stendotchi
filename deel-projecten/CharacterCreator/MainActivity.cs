@@ -11,13 +11,9 @@ using Android.Widget;
 
 namespace CharacterCreator
 {
-<<<<<<< HEAD:deel-projecten/CharacterCreator/MainActivity.cs
     [Activity(Label = "CharacterCreator", Theme = "@style/AppTheme", MainLauncher = true)]
+
     public class MainActivity : AppCompatActivity
-=======
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
-    public class CCMainActivity : AppCompatActivity
->>>>>>> fa17db4b2bf27be66693ac76e3453fd376cfc21f:deel-projecten/CharacterCreator/CCMainActivity.cs
     {
 
         protected override void OnCreate(Bundle savedInstanceState)
