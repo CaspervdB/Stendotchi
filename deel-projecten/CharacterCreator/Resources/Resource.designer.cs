@@ -3244,20 +3244,20 @@ namespace CharacterCreator
 			// aapt resource value: 0x7f0a003b
 			public const int FUNCTION = 2131361851;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int KopCharCreator = 2131361950;
+			// aapt resource value: 0x7f0a00a3
+			public const int KopCharCreator = 2131361955;
 			
 			// aapt resource value: 0x7f0a003c
 			public const int META = 2131361852;
 			
-			// aapt resource value: 0x7f0a00bc
-			public const int NewCharButtonsBody = 2131361980;
+			// aapt resource value: 0x7f0a00c1
+			public const int NewCharButtonsBody = 2131361985;
 			
-			// aapt resource value: 0x7f0a00be
-			public const int NewCharacterButtCreate = 2131361982;
+			// aapt resource value: 0x7f0a00c3
+			public const int NewCharacterButtCreate = 2131361987;
 			
-			// aapt resource value: 0x7f0a00bd
-			public const int NewCharacterButtReset = 2131361981;
+			// aapt resource value: 0x7f0a00c2
+			public const int NewCharacterButtReset = 2131361986;
 			
 			// aapt resource value: 0x7f0a003d
 			public const int SHIFT = 2131361853;
@@ -3346,26 +3346,26 @@ namespace CharacterCreator
 			// aapt resource value: 0x7f0a0066
 			public const int blocking = 2131361894;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int bodyCharCreator = 2131361949;
+			// aapt resource value: 0x7f0a00a2
+			public const int bodyCharCreator = 2131361954;
 			
 			// aapt resource value: 0x7f0a0044
 			public const int bottom = 2131361860;
 			
-			// aapt resource value: 0x7f0a00c0
-			public const int browser_actions_header_text = 2131361984;
+			// aapt resource value: 0x7f0a009e
+			public const int browser_actions_header_text = 2131361950;
 			
-			// aapt resource value: 0x7f0a00c2
-			public const int browser_actions_menu_item_icon = 2131361986;
+			// aapt resource value: 0x7f0a00a0
+			public const int browser_actions_menu_item_icon = 2131361952;
 			
-			// aapt resource value: 0x7f0a00c3
-			public const int browser_actions_menu_item_text = 2131361987;
+			// aapt resource value: 0x7f0a00a1
+			public const int browser_actions_menu_item_text = 2131361953;
 			
-			// aapt resource value: 0x7f0a00c1
-			public const int browser_actions_menu_items = 2131361985;
+			// aapt resource value: 0x7f0a009f
+			public const int browser_actions_menu_items = 2131361951;
 			
-			// aapt resource value: 0x7f0a00bf
-			public const int browser_actions_menu_view = 2131361983;
+			// aapt resource value: 0x7f0a009d
+			public const int browser_actions_menu_view = 2131361949;
 			
 			// aapt resource value: 0x7f0a0072
 			public const int buttonPanel = 2131361906;
@@ -3379,83 +3379,83 @@ namespace CharacterCreator
 			// aapt resource value: 0x7f0a0052
 			public const int center_vertical = 2131361874;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int charCreatorBGBottom = 2131361967;
-			
-			// aapt resource value: 0x7f0a00ad
-			public const int charCreatorBGMid = 2131361965;
-			
-			// aapt resource value: 0x7f0a00ab
-			public const int charCreatorBGTop = 2131361963;
-			
-			// aapt resource value: 0x7f0a00a2
-			public const int charCreatorHairButtBodyTerug = 2131361954;
+			// aapt resource value: 0x7f0a00b4
+			public const int charCreatorBGBottom = 2131361972;
 			
 			// aapt resource value: 0x7f0a00b2
-			public const int charCreatorHairButtBodyVerder = 2131361970;
-			
-			// aapt resource value: 0x7f0a00a3
-			public const int charCreatorHairButtTerug = 2131361955;
-			
-			// aapt resource value: 0x7f0a00b3
-			public const int charCreatorHairButtVerder = 2131361971;
-			
-			// aapt resource value: 0x7f0a00a4
-			public const int charCreatorHeadButtBodyTerug = 2131361956;
-			
-			// aapt resource value: 0x7f0a00b4
-			public const int charCreatorHeadButtBodyVerder = 2131361972;
-			
-			// aapt resource value: 0x7f0a00a5
-			public const int charCreatorHeadButtTerug = 2131361957;
-			
-			// aapt resource value: 0x7f0a00b5
-			public const int charCreatorHeadButtVerder = 2131361973;
-			
-			// aapt resource value: 0x7f0a00ac
-			public const int charCreatorHeadView = 2131361964;
-			
-			// aapt resource value: 0x7f0a00a1
-			public const int charCreatorKolomL = 2131361953;
-			
-			// aapt resource value: 0x7f0a00aa
-			public const int charCreatorKolomM = 2131361962;
-			
-			// aapt resource value: 0x7f0a00a0
-			public const int charCreatorKolommen = 2131361952;
-			
-			// aapt resource value: 0x7f0a00a8
-			public const int charCreatorLegsButtBodyTerug = 2131361960;
-			
-			// aapt resource value: 0x7f0a00b8
-			public const int charCreatorLegsButtBodyVerder = 2131361976;
-			
-			// aapt resource value: 0x7f0a00b9
-			public const int charCreatorLegsButtVerder = 2131361977;
+			public const int charCreatorBGMid = 2131361970;
 			
 			// aapt resource value: 0x7f0a00b0
-			public const int charCreatorLegsView = 2131361968;
-			
-			// aapt resource value: 0x7f0a00b1
-			public const int charCreatorR = 2131361969;
-			
-			// aapt resource value: 0x7f0a00a6
-			public const int charCreatorTorsoButtBodyTerug = 2131361958;
-			
-			// aapt resource value: 0x7f0a00b6
-			public const int charCreatorTorsoButtBodyVerder = 2131361974;
+			public const int charCreatorBGTop = 2131361968;
 			
 			// aapt resource value: 0x7f0a00a7
-			public const int charCreatorTorsoButtTerug = 2131361959;
+			public const int charCreatorHairButtBodyTerug = 2131361959;
 			
 			// aapt resource value: 0x7f0a00b7
-			public const int charCreatorTorsoButtVerder = 2131361975;
+			public const int charCreatorHairButtBodyVerder = 2131361975;
+			
+			// aapt resource value: 0x7f0a00a8
+			public const int charCreatorHairButtTerug = 2131361960;
+			
+			// aapt resource value: 0x7f0a00b8
+			public const int charCreatorHairButtVerder = 2131361976;
 			
 			// aapt resource value: 0x7f0a00a9
-			public const int charCreatorTorsoLegsButtTerug = 2131361961;
+			public const int charCreatorHeadButtBodyTerug = 2131361961;
+			
+			// aapt resource value: 0x7f0a00b9
+			public const int charCreatorHeadButtBodyVerder = 2131361977;
+			
+			// aapt resource value: 0x7f0a00aa
+			public const int charCreatorHeadButtTerug = 2131361962;
+			
+			// aapt resource value: 0x7f0a00ba
+			public const int charCreatorHeadButtVerder = 2131361978;
+			
+			// aapt resource value: 0x7f0a00b1
+			public const int charCreatorHeadView = 2131361969;
+			
+			// aapt resource value: 0x7f0a00a6
+			public const int charCreatorKolomL = 2131361958;
+			
+			// aapt resource value: 0x7f0a00af
+			public const int charCreatorKolomM = 2131361967;
+			
+			// aapt resource value: 0x7f0a00a5
+			public const int charCreatorKolommen = 2131361957;
+			
+			// aapt resource value: 0x7f0a00ad
+			public const int charCreatorLegsButtBodyTerug = 2131361965;
+			
+			// aapt resource value: 0x7f0a00bd
+			public const int charCreatorLegsButtBodyVerder = 2131361981;
+			
+			// aapt resource value: 0x7f0a00be
+			public const int charCreatorLegsButtVerder = 2131361982;
+			
+			// aapt resource value: 0x7f0a00b5
+			public const int charCreatorLegsView = 2131361973;
+			
+			// aapt resource value: 0x7f0a00b6
+			public const int charCreatorR = 2131361974;
+			
+			// aapt resource value: 0x7f0a00ab
+			public const int charCreatorTorsoButtBodyTerug = 2131361963;
+			
+			// aapt resource value: 0x7f0a00bb
+			public const int charCreatorTorsoButtBodyVerder = 2131361979;
+			
+			// aapt resource value: 0x7f0a00ac
+			public const int charCreatorTorsoButtTerug = 2131361964;
+			
+			// aapt resource value: 0x7f0a00bc
+			public const int charCreatorTorsoButtVerder = 2131361980;
 			
 			// aapt resource value: 0x7f0a00ae
-			public const int charCreatorTorsoView = 2131361966;
+			public const int charCreatorTorsoLegsButtTerug = 2131361966;
+			
+			// aapt resource value: 0x7f0a00b3
+			public const int charCreatorTorsoView = 2131361971;
 			
 			// aapt resource value: 0x7f0a0086
 			public const int checkbox = 2131361926;
@@ -3538,11 +3538,11 @@ namespace CharacterCreator
 			// aapt resource value: 0x7f0a005e
 			public const int fill = 2131361886;
 			
-			// aapt resource value: 0x7f0a00bb
-			public const int fillNameInput = 2131361979;
+			// aapt resource value: 0x7f0a00c0
+			public const int fillNameInput = 2131361984;
 			
-			// aapt resource value: 0x7f0a00ba
-			public const int fillNameInputBody = 2131361978;
+			// aapt resource value: 0x7f0a00bf
+			public const int fillNameInputBody = 2131361983;
 			
 			// aapt resource value: 0x7f0a0063
 			public const int fill_horizontal = 2131361891;
@@ -3613,8 +3613,8 @@ namespace CharacterCreator
 			// aapt resource value: 0x7f0a0070
 			public const int list_item = 2131361904;
 			
-			// aapt resource value: 0x7f0a009f
-			public const int logoStendotchi = 2131361951;
+			// aapt resource value: 0x7f0a00a4
+			public const int logoStendotchi = 2131361956;
 			
 			// aapt resource value: 0x7f0a00df
 			public const int masked = 2131362015;
@@ -4088,13 +4088,13 @@ namespace CharacterCreator
 			public const int abc_tooltip = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int activity_main = 2130968604;
+			public const int browser_actions_context_menu_page = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int browser_actions_context_menu_page = 2130968605;
+			public const int browser_actions_context_menu_row = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int browser_actions_context_menu_row = 2130968606;
+			public const int CharCrea_activity_main = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
 			public const int design_bottom_navigation_item = 2130968607;

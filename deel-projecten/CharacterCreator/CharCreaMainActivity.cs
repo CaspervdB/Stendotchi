@@ -13,7 +13,7 @@ namespace CharacterCreator
 {
     [Activity(Label = "CharacterCreator", Theme = "@style/AppTheme", MainLauncher = true)]
 
-    public class MainActivity : AppCompatActivity
+    public class CharCreaMainActivity : AppCompatActivity
     {
 
         protected override void OnCreate(Bundle savedInstanceState)
