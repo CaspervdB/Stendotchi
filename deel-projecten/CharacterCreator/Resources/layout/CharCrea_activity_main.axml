@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Top -->
+<LinearLayout
+    android:id="@+id/bodyCharCreator"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main"
+    android:gravity="center_horizontal">
+    <TextView
+        android:id="@+id/KopCharCreator"
+        android:text="Character creator"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"/>
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="127.5dp"
+        android:layout_height="39.0dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/logoStendotchi"/>
+
+<!-- Midden -->
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="375.5dp"
+        android:id="@+id/charCreatorKolommen" >
+
+        <!-- Kolom Links -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/charCreatorKolomL"
+            android:layout_weight="25"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp" >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="70.0dp"
+                android:layout_weight="25"
+                android:id="@+id/charCreatorHairButtBodyTerug"
+                android:gravity="center_vertical|center_horizontal" >
+                <ImageButton
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/charCreatorHairButtTerug"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="25"
+                android:id="@+id/charCreatorHeadButtBodyTerug"
+                android:gravity="center_vertical|center_horizontal" >
+                <ImageButton
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/charCreatorHeadButtTerug"
+                    android:scaleType="fitCenter"/>
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="25"
+                android:id="@+id/charCreatorTorsoButtBodyTerug"
+                android:gravity="center_vertical|center_horizontal" >
+                <ImageButton
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/charCreatorTorsoButtTerug"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="25"
+                android:id="@+id/charCreatorLegsButtBodyTerug"
+                android:gravity="center_vertical|center_horizontal" >
+                <ImageButton
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/charCreatorTorsoLegsButtTerug"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Kolom Midden -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/charCreatorKolomM"
+            android:layout_weight="50"
+            android:gravity="center_vertical|center_horizontal" >
+            <LinearLayout
+                android:layout_width="124dp"
+                android:layout_height="70.0dp"
+                android:background="#ddd"
+                android:layout_weight="25"
+                android:id="@+id/charCreatorBGTop"
+                android:gravity="center_horizontal|bottom" >
+                <!-- imagestack voor haar nog nodig -->
+                <ImageView
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="45dp"
+                    android:id="@+id/charCreatorHeadView" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:background="#b7b7b7"
+                android:layout_width="124dp"
+                android:layout_height="20.0dp"
+                android:layout_weight="25"
+                android:id="@+id/charCreatorBGMid"
+                android:gravity="center_vertical|center_horizontal" >
+                <ImageView
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/charCreatorTorsoView" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="124dp"
+                android:layout_height="70.0dp"
+                android:layout_weight="25"
+                android:background="#b2b2b2"
+                android:id="@+id/charCreatorBGBottom"
+                android:gravity="center_horizontal|top" >
+                <ImageView
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="15dp"
+                    android:id="@+id/charCreatorLegsView" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Kolom Rechts -->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:id="@+id/charCreatorR"
+            android:layout_weight="25"
+            android:layout_marginLeft="10dp" >
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="70.0dp"
+                android:layout_weight="25"
+                android:id="@+id/charCreatorHairButtBodyVerder"
+                android:gravity="center_vertical|center_horizontal" >
+                <ImageButton
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/charCreatorHairButtVerder"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="25"
+                android:id="@+id/charCreatorHeadButtBodyVerder"
+                android:gravity="center_vertical|center_horizontal" >
+                <ImageButton
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/charCreatorHeadButtVerder" 
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="25"
+                android:id="@+id/charCreatorTorsoButtBodyVerder"
+                android:gravity="center_vertical|center_horizontal" >
+                <ImageButton
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/charCreatorTorsoButtVerder" 
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_weight="25"
+                android:id="@+id/charCreatorLegsButtBodyVerder"
+                android:gravity="center_vertical|center_horizontal" >
+                <ImageButton
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/charCreatorLegsButtVerder"
+                    android:scaleType="fitCenter" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- einde kolommen -->
+
+    </LinearLayout>
+
+<!-- bottom -->
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fillNameInputBody" >
+            <EditText
+                android:layout_width="374.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/fillNameInput"
+                android:text="Fill in your characters name.."
+                android:layout_marginRight="235.5dp"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="63.5dp"
+            android:id="@+id/NewCharButtonsBody">
+            <Button
+                android:text="RESET"
+                android:layout_width="359.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:id="@+id/NewCharacterButtReset" />
+            <Button
+                android:text="Create"
+                android:layout_width="359.0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="50"
+                android:id="@+id/NewCharacterButtCreate" />
+        </LinearLayout>
+</LinearLayout>
