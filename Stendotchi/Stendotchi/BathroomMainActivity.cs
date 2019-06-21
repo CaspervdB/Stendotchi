@@ -32,16 +32,6 @@ namespace Stendotchi
         }
 
         //Methods for buttons
-        private void Button_Click_English(object sender, System.EventArgs e)
-        {
-            Preferences.Set("Lang", "EN");
-
-        }
-        private void Button_Click_Dutch(object sender, System.EventArgs e)
-        {
-            Preferences.Set("Lang", "NL");
-
-        }
 
         private void Button_Click_Bathroom(object sender, System.EventArgs e)
         {
