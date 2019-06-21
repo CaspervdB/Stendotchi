@@ -10,6 +10,7 @@ using Android.Views;
 using Android.Widget;
 using Java.Util.Concurrent.Locks;
 using System.Threading;
+using Android.Content.PM;
 
 namespace CharacterCreator
 {
@@ -17,35 +18,59 @@ namespace CharacterCreator
 
     public class CharCreaMainActivity : AppCompatActivity
     {
-        int TorsNumber = 0;
+        private Avatar _avatar;
 
 
-        protected override void OnCreate(Bundle savedInstanceState)                        
+        protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.CharCrea_activity_main);
 
-            ImageView charCreatorTorsoView = FindViewById<ImageView>(Resource.Id.charCreatorTorsoView);
-            ImageButton charCreatorTorsoButtTerug = FindViewById<ImageButton>(Resource.Id.charCreatorTorsoButtTerug);
-            ImageButton charCreatorTorsoButtVerder = FindViewById<ImageButton>(Resource.Id.charCreatorTorsoButtVerder);
+            this._avatar = new Avatar(this);
 
-            FindViewById<ImageView>(Resource.Id.charCreatorTorsoView).SetImageResource(Resource.Mipmap.testTorso1);
+            SetOnClick(Resource.Id.AvatarHeads, this._avatar.NextHeader);
+            SetOnClick(Resource.Id.AvatarTorsos, this._avatar.NextTorso);
+            SetOnClick(Resource.Id.AvatarLegs, this._avatar.NextLegs);
         }
 
-        //OPTIE een list van de items i.p.v. increment en decrement
-        protected void CharCreatorTorsoButtTerug_Click(object sender, CharCreaMainActivity e)
+            private void SetOnClick(int resourceId, Action onClickFunction)
+            {
+                var view = FindViewById(resourceId);
+                view.Click += delegate
+                {
+                    onClickFunction();
+                };
+            }
+
+             public override bool OnCreateOptionsMenu(IMenu menu)
         {
-            charCreatorTorsoButtTerug.Click += (o) => CharCreatorTorsoButtTerug_Click;
-            TorsNumber = --TorsNumber;
+            MenuInflater.Inflate(Resource.Menu.menu_main, menu);
+            return true;
         }
 
-        protected void CharCreatorTorsoButtVerder_Click(object sender, CharCreaMainActivity e)
+        public override bool OnOptionsPartSelected(IMenuPart part)
         {
-            charCreatorTorsoButtVerder.Click += (o) => CharCreatorTorsoButtVerder_Click;
-            TorsNumber = ++TorsNumber;
+            int id = part.PartId;
+            if (id == Resource.Id.action_settings)
+            {
+                return true;
+            }
+
+            return base.OnOptionsPartSelected(part);
         }
 
+        private void FabOnClick(object sender, EventArgs eventArgs)
+        {
+            View view = (View)sender;
+            CharCreateView.Make(view, "Hier komt nog een actie", CharCreateView.LengthLong)
+                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
+        }
 
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        {
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
     }
 }
