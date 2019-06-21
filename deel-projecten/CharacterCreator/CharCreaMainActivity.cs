@@ -18,6 +18,8 @@ namespace CharacterCreator
     public class CharCreaMainActivity : AppCompatActivity
     {
         int TorsNumber = 0;
+
+
         protected override void OnCreate(Bundle savedInstanceState)                        
         {
             base.OnCreate(savedInstanceState);
