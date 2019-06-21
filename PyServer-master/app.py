@@ -9,9 +9,10 @@ import logging
 import psycopg2
 from config import config
 from flask import send_file
+from imageai.Prediction import ImagePrediction
 import os
-from imageai.Detection import ObjectDetection
 from werkzeug.utils import secure_filename
+from flask import g
 
 # set path
 execution_path = os.getcwd()
@@ -19,11 +20,6 @@ execution_path = os.getcwd()
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = "uploadedimgs"
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
-
-detector = ObjectDetection()
-detector.setModelTypeAsYOLOv3()
-detector.setModelPath( os.path.join(execution_path , "yolo.h5"))
-detector.loadModel()
 
 @app.route("/img", methods=['POST'])
 def detect_img():
@@ -40,10 +36,21 @@ def detect_img():
     if file and allowed_file(file.filename):
         filename = secure_filename(file.filename)
         file.save(os.path.join(execution_path, filename))
-        detections = detector.detectObjectsFromImage(input_image=os.path.join(execution_path , filename), output_image_path=os.path.join(execution_path , "output.jpg"), minimum_percentage_probability=30)
-        results = []
-        for obj in detections:
-            results.push(obj)
+        logging.debug(os.path.join(execution_path , filename));
+
+        prediction = ImagePrediction()
+        prediction.setModelTypeAsSqueezeNet()
+        prediction.setModelPath(os.path.join(execution_path, "squeezenet_weights_tf_dim_ordering_tf_kernels.h5"))
+        prediction.loadModel()
+
+        predictions, probabilities = prediction.predictImage(os.path.join(execution_path, filename), result_count=5 )
+
+        results = [];
+
+        for eachPrediction, eachProbability in zip(predictions, probabilities):
+            results.append((eachPrediction, eachProbability))
+
+        os.remove(os.path.join(execution_path, filename))
 
         return jsonify(results)
 
