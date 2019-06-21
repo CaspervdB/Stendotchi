@@ -288,4 +288,4 @@ __pycache__/
 *.xsd.cs
 
 # dataset voor beeld herkenning
-yolo.h5
+*.h5
