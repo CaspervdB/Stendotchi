@@ -47,16 +47,20 @@
 				android:layout_marginTop="55dp"
 				android:layout_width="50dp"
 				android:layout_height="50dp"/>
-			
+
         </FrameLayout>
-        <android.support.design.widget.BottomNavigationView
-            android:id="@+id/bottom_navigation"
-            android:layout_width="match_parent"
-            android:layout_height="56dp"
-            android:layout_gravity="start"
-            android:layout_alignParentBottom="true"
-            android:background="#EAF4F9"
-            app:elevation="16dp"
-            app:menu="@menu/bottom_navigation_main" />
+
+		<android.support.design.widget.BottomNavigationView
+				android:minWidth="25px"
+				android:minHeight="25px"
+				android:layout_width="match_parent"
+				android:layout_height="56dp"
+				android:layout_gravity="start"
+				android:layout_alignParentBottom="true"
+				android:id="@+id/bottom_navigation"
+				app:elevation="16dp"
+				app:menu="@menu/bottom_navigation_main"
+				android:background="#EAF4F9"/>
+
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

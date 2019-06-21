@@ -6,7 +6,7 @@ using Android.Widget;
 
 namespace Stendotchi
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme")]
     public class CCMainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)

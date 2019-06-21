@@ -16,6 +16,7 @@ namespace Stendotchi
         BottomNavigationView bottomNavigation;
         protected override void OnCreate(Bundle bundle)
         {
+            System.Console.WriteLine("ping");
             RequestWindowFeature(WindowFeatures.NoTitle);
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.main);
@@ -37,7 +38,6 @@ namespace Stendotchi
 
 
             bottomNavigation = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation);
-
 
             bottomNavigation.NavigationItemSelected += BottomNavigation_NavigationItemSelected;
 

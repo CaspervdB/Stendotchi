@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace Stendotchi
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme")]
     public class ShopMain : AppCompatActivity
     {
         public Button shirtButton;

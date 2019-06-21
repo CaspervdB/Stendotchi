@@ -6,7 +6,7 @@ using Android.Widget;
 using Xamarin.Essentials;
 namespace Stendotchi
 {
-    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "@string/app_name", Theme = "@style/AppTheme")]
     public class BathroomMainActivity : AppCompatActivity
     {
         protected override void OnCreate(Bundle savedInstanceState)
@@ -17,17 +17,17 @@ namespace Stendotchi
             SetContentView(Resource.Layout.activity_main);
 
             //Bind buttons to methods
-            Button ButEN = FindViewById<Button>(Resource.Id.ButtonEN);
-            ButEN.Click += Button_Click_English;
+            //Button ButEN = FindViewById<Button>(Resource.Id.ButtonEN);
+            //ButEN.Click += Button_Click_English;
 
-            Button ButNL = FindViewById<Button>(Resource.Id.ButtonNL);
-            ButNL.Click += Button_Click_Dutch;
+            //Button ButNL = FindViewById<Button>(Resource.Id.ButtonNL);
+            //ButNL.Click += Button_Click_Dutch;
 
-            Button ButtBath = FindViewById<Button>(Resource.Id.ButtonBath);
-            ButtBath.Click += Button_Click_Bathroom;
+            //Button ButtBath = FindViewById<Button>(Resource.Id.ButtonBath);
+            //ButtBath.Click += Button_Click_Bathroom;
 
-            Button ButtSet = FindViewById<Button>(Resource.Id.ButtonSettings);
-            ButtSet.Click += Button_Click_Settings;
+            //Button ButtSet = FindViewById<Button>(Resource.Id.ButtonSettings);
+            //ButtSet.Click += Button_Click_Settings;
 
         }
 
