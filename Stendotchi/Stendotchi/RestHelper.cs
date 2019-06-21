@@ -12,7 +12,7 @@ using Android.Widget;
 using Newtonsoft.Json;
 using RestSharp;
 
-namespace ShopProject
+namespace Stendotchi
 {
     public static class RestHelper
     {

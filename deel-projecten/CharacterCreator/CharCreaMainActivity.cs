@@ -8,36 +8,44 @@ using Android.Support.V7.App;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Java.Util.Concurrent.Locks;
+using System.Threading;
 
 namespace CharacterCreator
 {
-    [Activity(Label = "CharacterCreator", Theme = "@style/AppTheme", MainLauncher = true)]
+    [Activity(Label = "CharacterCreator", MainLauncher = true)]
 
     public class CharCreaMainActivity : AppCompatActivity
     {
+        int TorsNumber = 0;
 
-        protected override void OnCreate(Bundle savedInstanceState)
+
+        protected override void OnCreate(Bundle savedInstanceState)                        
         {
             base.OnCreate(savedInstanceState);
-            Xamarin.Essentials.Platform.Init(this, savedInstanceState);
 
-            // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.CharCrea_activity_main);
 
-            var charCreatorHairButtTerug = FindViewById<ImageButton>(Resource.Id.charCreatorHairButtTerug);
+            ImageView charCreatorTorsoView = FindViewById<ImageView>(Resource.Id.charCreatorTorsoView);
+            ImageButton charCreatorTorsoButtTerug = FindViewById<ImageButton>(Resource.Id.charCreatorTorsoButtTerug);
+            ImageButton charCreatorTorsoButtVerder = FindViewById<ImageButton>(Resource.Id.charCreatorTorsoButtVerder);
 
+            FindViewById<ImageView>(Resource.Id.charCreatorTorsoView).SetImageResource(Resource.Mipmap.testTorso1);
         }
 
-        private object FindViewById<T>(object charCreatorHairButtTerug)
+        //OPTIE een list van de items i.p.v. increment en decrement
+        protected void CharCreatorTorsoButtTerug_Click(object sender, CharCreaMainActivity e)
         {
-            throw new NotImplementedException();
+            charCreatorTorsoButtTerug.Click += (o) => CharCreatorTorsoButtTerug_Click;
+            TorsNumber = --TorsNumber;
         }
 
-        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
+        protected void CharCreatorTorsoButtVerder_Click(object sender, CharCreaMainActivity e)
         {
-            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
-
-            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            charCreatorTorsoButtVerder.Click += (o) => CharCreatorTorsoButtVerder_Click;
+            TorsNumber = ++TorsNumber;
         }
+
+
     }
 }

@@ -1,14 +1,55 @@
+# install packages:
+
+#pip install flask
+#pip install psycopg2
+#pip install imageai
+
 from flask import Flask, request, abort, jsonify
 import logging
 import psycopg2
 from config import config
 from flask import send_file
 import os
+from imageai.Detection import ObjectDetection
+from werkzeug.utils import secure_filename
 
+# set path
+execution_path = os.getcwd()
 
 app = Flask(__name__)
+app.config['UPLOAD_FOLDER'] = "uploadedimgs"
+ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
+detector = ObjectDetection()
+detector.setModelTypeAsYOLOv3()
+detector.setModelPath( os.path.join(execution_path , "yolo.h5"))
+detector.loadModel()
 
+@app.route("/img", methods=['POST'])
+def detect_img():
+    # return nothing if no file
+    if 'file' not in request.files:
+        return jsonify("")
+
+    file = request.files['file']
+
+    if file.filename == '':
+            flash('No selected file')
+            return jsonify("")
+
+    if file and allowed_file(file.filename):
+        filename = secure_filename(file.filename)
+        file.save(os.path.join(execution_path, filename))
+        detections = detector.detectObjectsFromImage(input_image=os.path.join(execution_path , filename), output_image_path=os.path.join(execution_path , "output.jpg"), minimum_percentage_probability=30)
+        results = []
+        for obj in detections:
+            results.push(obj)
+
+        return jsonify(results)
+
+def allowed_file(filename):
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 @app.route("/")
 def hello():
