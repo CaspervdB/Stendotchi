@@ -29,71 +29,72 @@ namespace CharacterCreator
 
             this._charAssembly = new CharAssembly();
 
-        NextHeader();
-        NextTorso();
-        NextLegs();
+            NextHead();
+            NextTorso();
+            NextLegs();
         }
 
-    //update parts
-    private void UpdateCharacterUI(int resourceId, string name)
-    {
-        UpdateCharAssemblyPart(resourceId, part.Name);
-        UpdateCharacterPartImage(resourceId, part.ImagePath);
-    }
+        //update parts
+        private void UpdateCharacterUI(int resourceId, string name)
+        {
+            UpdateCharAssemblyPart(resourceId, part.Name);
+            UpdateCharacterPartImage(resourceId, part.ImagePath);
+        }
 
-    // Next image of the part HEAD
-    public void NextHead()
-    {
-        // Retrieve next.
-        this._Head = this._CharAssembly.GetNextTopper();
-        // Update UI.
-        UpdateCharAssemblyUI(mipmap.Id.testHoofd1, this._head);
-    }
+        // Next image of the part HEAD
+        public void NextHead()
+        {
+            // Retrieve next.
+            this._headers = this._charAssembly.GetNextHeader();
+            // Update UI.
+            UpdateCharAssemblyUI(mipmap.Id.testHoofd1, this._head);
+        }
 
-    // Next image of the part HEAD
-    public void NextTorso()
-    {
-        // Retrieve next.
-        this._Torso = this._CharAssembly.GetNextTorso();
-        // Update UI.
-        UpdateCharAssemblyUI(mipmap.Id.testTorso1, this._Torso);
-    }
+        // Next image of the part HEAD
+        public void NextTorso()
+        {
+            // Retrieve next.
+            this._Torso = this._CharAssembly.GetNextTorso();
+            // Update UI.
+            UpdateCharAssemblyUI(mipmap.Id.testTorso1, this._Torso);
+        }
 
-    // Next image of the part HEAD
-    public void NextLegs()
-    {
-        // Retrieve next.
-        this._Legs = this._CharAssembly.GetNextLegs();
-        // Update UI.
-        UpdateCharAssemblyUI(mipmap.Id.testLegs1, this._Legs);
-    }
+        // Next image of the part HEAD
+        public void NextLegs()
+        {
+            // Retrieve next.
+            this._Legs = this._CharAssembly.GetNextLegs();
+            // Update UI.
+            UpdateCharAssemblyUI(mipmap.Id.testLegs1, this._Legs);
+        }
 
-    //PREVIOUS
+        //PREVIOUS
 
-    // Previous image of the part HEAD
-    public void NextHead()
-    {
-        // Retrieve next.
-        this._Head = this._CharAssembly.GetPreviousHead();
-        // Update UI.
-        UpdateCharAssemblyUI(mipmap.Id.testHead1, this._Head);
-    }
+        // Previous image of the part HEAD
+        public void PreviousHead()
+        {
+            // Retrieve next.
+            this._Head = this._CharAssembly.GetPreviousHead();
+            // Update UI.
+            UpdateCharAssemblyUI(mipmap.Id.testHead1, this._Head);
+        }
 
-    // Previous image of the part HEAD
-    public void NextTorso()
-    {
-        // Retrieve next.
-        this._Torso = this._CharAssembly.GetPreviousTorso();
-        // Update UI.
-        UpdateCharAssemblyUI(mipmap.Id.testTorso1, this._Torso);
-    }
+        // Previous image of the part HEAD
+        public void PreviousTorso()
+        {
+            // Retrieve next.
+            this._Torso = this._CharAssembly.GetPreviousTorso();
+            // Update UI.
+            UpdateCharAssemblyUI(mipmap.Id.testTorso1, this._Torso);
+        }
 
-    // Previous image of the part HEAD
-    public void NextLegs()
-    {
-        // Retrieve next.
-        this._Legs = this._CharAssembly.GetPreviousLegs();
-        // Update UI.
-        UpdateCharAssemblyUI(mipmap.Id.testLegs1, this._Legs);
+        // Previous image of the part HEAD
+        public void PreviousLegs()
+        {
+            // Retrieve next.
+            this._Legs = this._CharAssembly.GetPreviousLegs();
+            // Update UI.
+            UpdateCharAssemblyUI(mipmap.Id.testLegs1, this._Legs);
+        }
     }
 }
