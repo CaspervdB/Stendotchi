@@ -32,14 +32,14 @@ namespace Stendotchi
             using (var formData = new MultipartFormDataContent())
             {
                 formData.Add(fileStreamContent, "file", Path.GetFileName(imagefile.Name));
-                var response = await client.PostAsync("http://192.168.51.2/img", formData);
+                var response = await client.PostAsync("https://stendotchi-test.herokuapp.com/img", formData);
                 if (!response.IsSuccessStatusCode)
                 {
                     return null;
                 }
                 var resp = await response.Content.ReadAsStringAsync();
                 var parse = JArray.Parse(resp);
-                return parse.Select(x => x.ToString()).ToArray();
+                return parse.Select(x => x[0].ToString()).ToArray();
             }
         }
 

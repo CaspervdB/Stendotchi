@@ -25,6 +25,11 @@ namespace Stendotchi
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_reminder);
+            string[] req = new string[1]
+                {
+                    Android.Manifest.Permission.Camera
+                };
+            RequestPermissions(req, 0);
 
             // get reminder data from intent
             text = this.Intent.GetStringExtra("text");
@@ -67,6 +72,8 @@ namespace Stendotchi
                 using(FileStream fs = new FileStream(file.Path, FileMode.Open))
                 {
                     var objects = await RestHelper.DetectObjects(fs);
+                    this.FindViewById<TextView>(Resource.Id.textView1).SetText(string.Join(", ", objects), TextView.BufferType.Normal);
+                    return;
                 }
             };
         }
