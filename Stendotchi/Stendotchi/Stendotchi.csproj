@@ -59,6 +59,9 @@
     <Compile Include="Bathroom.cs" />
     <Compile Include="BathroomMainActivity.cs" />
     <Compile Include="bedroom.cs" />
+    <Compile Include="CharAssembly.cs" />
+    <Compile Include="CharCreaMainActivity.cs" />
+    <Compile Include="CharParts.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
     <Compile Include="Fragments\Fragment3.cs" />
@@ -257,12 +260,6 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\layout\CC_activity_main.axml">
-      <Generator>MSBuild:UpdateGeneratedFiles</Generator>
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\mipmap-anydpi-v26\shower.png" />
   </ItemGroup>
   <ItemGroup>
@@ -294,6 +291,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\xml\file_paths.xml" />
+	</ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CharCrea_activity_main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\wardrobeLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

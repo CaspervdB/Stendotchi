@@ -4774,10 +4774,7 @@ namespace Stendotchi
 		{
 			
 			// aapt resource value: 0x7f070000
-			public const int file_paths = 2131165184;
-			
-			// aapt resource value: 0x7f070001
-			public const int xamarin_essentials_fileprovider_file_paths = 2131165185;
+			public const int xamarin_essentials_fileprovider_file_paths = 2131165184;
 			
 			static Xml()
 			{

@@ -60,7 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CharCreaMainActivity.cs" />
-    <Compile Include="Avatar.cs" />
     <Compile Include="CharParts.cs" />
     <Compile Include="CharAssembly.cs" />
     <Compile Include="Resources\Resource.designer.cs" />

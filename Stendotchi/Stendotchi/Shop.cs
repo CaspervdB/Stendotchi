@@ -8,7 +8,10 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 81f5347b36ded596743042648584cab6825db134
 
 namespace Stendotchi
 {
