@@ -18,6 +18,7 @@ namespace Stendotchi
 
     public class CharCreaMainActivity : AppCompatActivity
     {
+        //avatar class komt nog
         private Avatar _avatar;
 
 
@@ -29,7 +30,7 @@ namespace Stendotchi
 
             this._avatar = new Avatar(this);
 
-            SetOnClick(Resource.Id._headers, this._avatar.NextHead);
+            SetOnClick(Resource.Id.AvatarTopper, this._avatar.NextHead);
             SetOnClick(Resource.Id.AvatarTorsos, this._avatar.NextTorso);
             SetOnClick(Resource.Id.AvatarLegs, this._avatar.NextLegs);
         }
