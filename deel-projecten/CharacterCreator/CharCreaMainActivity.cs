@@ -29,7 +29,7 @@ namespace CharacterCreator
 
             this._avatar = new Avatar(this);
 
-            SetOnClick(Resource.Id.AvatarHeads, this._avatar.NextHeader);
+            SetOnClick(Resource.Id._headers, this._avatar.NextHead);
             SetOnClick(Resource.Id.AvatarTorsos, this._avatar.NextTorso);
             SetOnClick(Resource.Id.AvatarLegs, this._avatar.NextLegs);
         }
