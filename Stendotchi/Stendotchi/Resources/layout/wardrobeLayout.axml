@@ -44,7 +44,7 @@
         android:background="#000"
         android:layout_weight="33"
         android:layout_gravity="left">
-        <LinearLayout
+        <LinearLayout>
             <TextView
                 android:text="Text"
                 android:layout_width="match_parent"

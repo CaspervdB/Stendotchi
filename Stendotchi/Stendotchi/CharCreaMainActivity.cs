@@ -11,6 +11,7 @@ using Android.Widget;
 using Java.Util.Concurrent.Locks;
 using System.Threading;
 using Android.Content.PM;
+using Wardrobe;
 
 namespace Stendotchi
 {
