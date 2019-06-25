@@ -12,7 +12,7 @@ using Java.Util.Concurrent.Locks;
 using System.Threading;
 using Android.Content.PM;
 
-namespace CharacterCreator
+namespace Stendotchi
 {
     [Activity(Label = "CharacterCreator", MainLauncher = true)]
 

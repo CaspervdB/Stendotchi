@@ -59,6 +59,9 @@
     <Compile Include="Bathroom.cs" />
     <Compile Include="BathroomMainActivity.cs" />
     <Compile Include="bedroom.cs" />
+    <Compile Include="CharAssembly.cs" />
+    <Compile Include="CharCreaMainActivity.cs" />
+    <Compile Include="CharParts.cs" />
     <Compile Include="Fragments\Fragment1.cs" />
     <Compile Include="Fragments\Fragment2.cs" />
     <Compile Include="Fragments\Fragment3.cs" />
@@ -116,6 +119,9 @@
     </PackageReference>
     <PackageReference Include="RestSharp">
       <Version>106.6.9</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>4.0.1.5</Version>
     </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Design">
       <Version>28.0.0.1</Version>
@@ -279,6 +285,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\CharCrea_activity_main.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\wardrobeLayout.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
