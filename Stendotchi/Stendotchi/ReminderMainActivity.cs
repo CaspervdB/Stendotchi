@@ -12,7 +12,7 @@ using Stendotchi;
 
 namespace Stendotchi
 {
-    [Activity(Label = "@string/app_name")]
+    [Activity(Label = "@string/app_name", MainLauncher = true)]
     public class ReminderMainActivity : AppCompatActivity
     {
 
@@ -33,6 +33,11 @@ namespace Stendotchi
                 rem.OnReminder += OnReminder;
                 lo.AddView(rem);
             }
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
+        {
+            Plugin.Permissions.PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
         private void OnReminder(Reminder r)

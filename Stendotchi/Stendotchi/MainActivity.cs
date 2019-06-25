@@ -9,7 +9,7 @@ using Android.Widget;
 
 namespace Stendotchi
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true, LaunchMode = Android.Content.PM.LaunchMode.SingleTop, Icon = "@mipmap/icon")]
+    [Activity(Label = "@string/app_name", /*MainLauncher = true,*/ LaunchMode = Android.Content.PM.LaunchMode.SingleTop, Icon = "@mipmap/icon")]
     public class MainActivity : AppCompatActivity
     {
 
@@ -70,6 +70,11 @@ namespace Stendotchi
             SupportFragmentManager.BeginTransaction()
                .Replace(Resource.Id.content_frame, fragment)
                .Commit();
+        }
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
+        {
+            Plugin.Permissions.PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

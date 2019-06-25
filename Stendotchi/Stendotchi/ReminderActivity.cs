@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 
@@ -10,6 +11,7 @@ using Android.Runtime;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using Plugin.Media;
 
 namespace Stendotchi
 {
@@ -39,6 +41,33 @@ namespace Stendotchi
             this.FindViewById<Button>(Resource.Id.okbtn).Click += (sender, e) =>
             {
                 this.Finish();
+            };
+
+            this.FindViewById<Button>(Resource.Id.photobtn).Click += async (sender, e) =>
+            {
+                await CrossMedia.Current.Initialize();
+
+                if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
+                {
+                    Toast.MakeText(this.BaseContext, "Camera unavailable", ToastLength.Short);
+                    return;
+                }
+
+                var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
+                {
+                    Directory = "Stendotchi",
+                    Name = "img.jpg"
+                });
+
+                if (file == null)
+                    return;
+
+                Toast.MakeText(this.BaseContext, file.Path, ToastLength.Short);
+
+                using(FileStream fs = new FileStream(file.Path, FileMode.Open))
+                {
+                    var objects = await RestHelper.DetectObjects(fs);
+                }
             };
         }
     }
