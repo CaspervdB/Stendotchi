@@ -20,12 +20,18 @@ namespace Stendotchi
             RequestWindowFeature(WindowFeatures.NoTitle);
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.main);
+
+            //var bn = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation);
+            //bn.InflateMenu(Resource.Menu.bottom_navigation_main);
+
             Button settingsButton = FindViewById<Button>(Resource.Id.settings);
-            settingsButton.Click += delegate {
-                StartActivity(typeof(BathroomMainActivity));
+            settingsButton.Click += delegate
+            {
+                StartActivity(typeof(bedroom));
             };
             Button remindersButton = FindViewById<Button>(Resource.Id.reminders);
-            remindersButton.Click += delegate {
+            settingsButton.Click += delegate
+            {
                 StartActivity(typeof(ReminderMainActivity));
             };
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);

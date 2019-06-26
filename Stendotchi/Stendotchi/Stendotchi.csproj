@@ -98,8 +98,8 @@
     <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
     <AndroidResource Include="Resources\values\strings.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi\ic_launcher.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi\ic_launcher_round.xml" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
@@ -263,34 +263,34 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\shower.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi\shower.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\sink.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi\sink.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\knop.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi\knop.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\knoplinks.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi\knoplinks.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\knoprechts.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi\knoprechts.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\testhaar1.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi\testhaar1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\testHoofd1.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi\testHoofd1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\testLegs1.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi\testLegs1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\testTorso1.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi\testTorso1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi-v26\icon.png" />
+    <AndroidResource Include="Resources\mipmap-anydpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\CharCrea_activity_main.axml" />
