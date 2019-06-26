@@ -22,6 +22,8 @@ namespace Stendotchi
             SetContentView(Resource.Layout.bedroom);
             var timeButton = FindViewById<Button>(Resource.Id.timeButton);
             var timeDisplay = FindViewById<TextView>(Resource.Id.timer);
+            timePicker = FindViewById<TimePicker>(Resource.Id.tpicker);
+
             timeButton.Click += (s, e) =>
             {
                 timeDisplay.Text = DateTime.Now.ToString("h:mm tt");
