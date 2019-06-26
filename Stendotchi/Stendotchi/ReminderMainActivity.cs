@@ -12,7 +12,7 @@ using Stendotchi;
 
 namespace Stendotchi
 {
-    [Activity(Label = "@string/app_name")]
+    [Activity(Label = "@string/app_name", MainLauncher = true)]
     public class ReminderMainActivity : AppCompatActivity
     {
 

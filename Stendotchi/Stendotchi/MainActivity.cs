@@ -9,7 +9,7 @@ using Android.Widget;
 
 namespace Stendotchi
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true, LaunchMode = Android.Content.PM.LaunchMode.SingleTop, Icon = "@mipmap/icon")]
+    [Activity(Label = "@string/app_name", /*MainLauncher = true,*/ LaunchMode = Android.Content.PM.LaunchMode.SingleTop, Icon = "@mipmap/icon")]
     public class MainActivity : AppCompatActivity
     {
 

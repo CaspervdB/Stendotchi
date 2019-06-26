@@ -85,7 +85,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -120,6 +122,9 @@
     </PackageReference>
     <PackageReference Include="RestSharp">
       <Version>106.6.9</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugin.Media">
       <Version>4.0.1.5</Version>
@@ -292,6 +297,9 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\wardrobeLayout.axml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\file_paths.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

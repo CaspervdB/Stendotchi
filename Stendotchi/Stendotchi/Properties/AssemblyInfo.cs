@@ -28,5 +28,5 @@ using Android.App;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]
-[assembly: UsesFeature("android.hardware.camera", Required = true)]
-[assembly: UsesFeature("android.hardware.camera.autofocus", Required = true)]
+[assembly: UsesFeature("android.hardware.CAMERA", Required = true)]
+[assembly: UsesFeature("android.hardware.CAMERA.AUTOFOCUS", Required = true)]

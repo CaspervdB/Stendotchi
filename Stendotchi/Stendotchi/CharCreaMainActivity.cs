@@ -14,12 +14,12 @@ using Android.Content.PM;
 
 namespace Stendotchi
 {
-    [Activity(Label = "CharacterCreator", MainLauncher = true)]
+    [Activity(Label = "CharacterCreator")]
 
     public class CharCreaMainActivity : AppCompatActivity
     {
         //avatar class komt nog
-        private Avatar _avatar;
+        //private Avatar _avatar;
 
 
         protected override void OnCreate(Bundle savedInstanceState)
