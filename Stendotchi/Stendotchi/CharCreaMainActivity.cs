@@ -28,11 +28,11 @@ namespace Stendotchi
 
             SetContentView(Resource.Layout.CharCrea_activity_main);
 
-            this._avatar = new Avatar(this);
+            //this._avatar = new Avatar(this);
 
-            SetOnClick(Resource.Id.AvatarTopper, this._avatar.NextHead);
-            SetOnClick(Resource.Id.AvatarTorsos, this._avatar.NextTorso);
-            SetOnClick(Resource.Id.AvatarLegs, this._avatar.NextLegs);
+            //SetOnClick(Resource.Id.AvatarTopper, this._avatar.NextHead);
+            //SetOnClick(Resource.Id.AvatarTorsos, this._avatar.NextTorso);
+            //SetOnClick(Resource.Id.AvatarLegs, this._avatar.NextLegs);
         }
 
             private void SetOnClick(int resourceId, Action onClickFunction)
@@ -50,7 +50,7 @@ namespace Stendotchi
             return true;
         }
 
-        public override bool OnOptionsPartSelected(IMenuPart part)
+        /*public override bool OnOptionsPartSelected(IMenuPart part)
         {
             int id = part.PartId;
             if (id == Resource.Id.action_settings)
@@ -59,13 +59,13 @@ namespace Stendotchi
             }
 
             return base.OnOptionsPartSelected(part);
-        }
+        }*/
 
         private void FabOnClick(object sender, EventArgs eventArgs)
         {
             View view = (View)sender;
-            CharCreateView.Make(view, "Hier komt nog een actie", CharCreateView.LengthLong)
-                .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
+            //CharCreateView.Make(view, "Hier komt nog een actie", CharCreateView.LengthLong)
+            //    .SetAction("Action", (Android.Views.View.IOnClickListener)null).Show();
         }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)

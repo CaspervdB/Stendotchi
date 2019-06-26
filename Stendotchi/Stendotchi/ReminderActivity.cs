@@ -61,7 +61,8 @@ namespace Stendotchi
                 var file = await CrossMedia.Current.TakePhotoAsync(new Plugin.Media.Abstractions.StoreCameraMediaOptions
                 {
                     Directory = "Stendotchi",
-                    Name = "img.jpg"
+                    Name = "img.jpg",
+                    SaveToAlbum = false
                 });
 
                 if (file == null)
