@@ -22,16 +22,16 @@ namespace Stendotchi
             SetContentView(Resource.Layout.main);
             Button settingsButton = FindViewById<Button>(Resource.Id.settings);
             settingsButton.Click += delegate {
-                StartActivity(typeof(bedroom));
+                StartActivity(typeof(BathroomMainActivity));
             };
             Button remindersButton = FindViewById<Button>(Resource.Id.reminders);
-            settingsButton.Click += delegate {
+            remindersButton.Click += delegate {
                 StartActivity(typeof(ReminderMainActivity));
             };
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             if (toolbar != null)
             {
-                SetSupportActionBar(toolbar);
+                //SetSupportActionBar(toolbar);
                 SupportActionBar.SetDisplayHomeAsUpEnabled(false);
                 SupportActionBar.SetHomeButtonEnabled(false);
             }

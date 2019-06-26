@@ -29,14 +29,14 @@
 			android:maxWidth="25px"
             android:minHeight="25px">
 			<Button
-				android:text="Reminders"
+				android:text="Settings"
 				android:layout_width="50dp"
 				android:layout_marginTop="60dp"
 				android:layout_height="50dp"
 				android:layout_gravity="right"
 				android:id="@+id/settings" />
 			<Button
-				android:text="Settings"
+				android:text="Reminders"
 				android:layout_marginTop="105dp"
 				android:layout_width="50dp"
 				android:layout_height="50dp"
