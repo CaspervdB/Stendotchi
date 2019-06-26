@@ -16,7 +16,7 @@ using Plugin.Media;
 
 namespace Stendotchi
 {
-    [Activity(Label = "ReminderActivity")]
+    [Activity(Label = "ReminderActivity", ScreenOrientation = Android.Content.PM.ScreenOrientation.Portrait)]
     public class ReminderActivity : AppCompatActivity
     {
         private string text;
@@ -43,6 +43,9 @@ namespace Stendotchi
             {
                 this.Finish();
             }
+
+            var spinner = this.FindViewById<ProgressBar>(Resource.Id.reminderphotospin);
+            spinner.Visibility = ViewStates.Invisible;
 
             // set textview and button data
             this.FindViewById<TextView>(Resource.Id.textView1).SetText($"{id}: {text}", TextView.BufferType.Normal);
@@ -75,7 +78,6 @@ namespace Stendotchi
                 Toast.MakeText(this.ApplicationContext,
                         "Camera permission given.", ToastLength.Long);
 
-                await Task.Delay(1500);
                 await CrossMedia.Current.Initialize();
 
                 if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
@@ -96,10 +98,12 @@ namespace Stendotchi
 
                 Toast.MakeText(this.BaseContext, file.Path, ToastLength.Short);
 
-                using(FileStream fs = new FileStream(file.Path, FileMode.Open))
+                spinner.Visibility = ViewStates.Visible;
+                using (FileStream fs = new FileStream(file.Path, FileMode.Open))
                 {
                     var objects = await RestHelper.DetectObjects(fs);
                     this.FindViewById<TextView>(Resource.Id.textView1).SetText(string.Join(", ", objects), TextView.BufferType.Normal);
+                    spinner.Visibility = ViewStates.Invisible;
                     return;
                 }
             };

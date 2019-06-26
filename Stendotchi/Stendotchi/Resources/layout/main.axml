@@ -20,35 +20,34 @@
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <FrameLayout
-            android:id="@+id/content_frame"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_above="@+id/bottom_navigation"
-            android:minWidth="25px"
+		<FrameLayout
+			android:id="@+id/content_frame"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:layout_above="@+id/bottom_navigation"
+			android:minWidth="25px"
 			android:maxWidth="25px"
-            android:minHeight="25px">
+			android:minHeight="25px">
 			<Button
 				android:text="Reminders"
 				android:layout_width="50dp"
 				android:layout_marginTop="60dp"
 				android:layout_height="50dp"
 				android:layout_gravity="right"
-				android:id="@+id/settings" />
+				android:id="@+id/reminders" />
 			<Button
 				android:text="Settings"
 				android:layout_marginTop="105dp"
 				android:layout_width="50dp"
 				android:layout_height="50dp"
 				android:layout_gravity="right"
-				android:id="@+id/reminders" />
+				android:id="@+id/settings" />
 			<ImageButton
 				android:text="lvl"
 				android:layout_marginTop="55dp"
 				android:layout_width="50dp"
 				android:layout_height="50dp"/>
-
-        </FrameLayout>
+		</FrameLayout>
 
 		<android.support.design.widget.BottomNavigationView
 				android:minWidth="25px"
