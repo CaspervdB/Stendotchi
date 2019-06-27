@@ -12,12 +12,12 @@
 		android:minHeight="25px"
 		android:id="@+id/textView1" />
 	<Button
-		android:text="OK"
+		android:text="Sluiten"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/okbtn" />
 	<Button
-		android:text="Take Photo"
+		android:text="Foto nemen"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
 		android:id="@+id/photobtn" />

@@ -20,12 +20,14 @@ namespace Stendotchi.Fragments
             return frag3;
         }
 
+        int click = 0;
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
             base.OnViewCreated(view, savedInstanceState);
             var chv = view.FindViewById<LinearLayout>(Resource.Id.charview);
             var charview = new CharacterView(view.Context);
             charview.UpdateView();
+
             chv.AddView(charview);
         }
 

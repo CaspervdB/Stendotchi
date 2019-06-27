@@ -44,11 +44,11 @@ namespace Stendotchi
 
         public void UpdateView()
         {
-            Topper.SetImageResource(UserProfile.Current.CurrentTopper);
+            Topper.SetImageResource(WardrobeMapping.mapping.GetResource(UserProfile.Current.CurrentTopper));
 
-            Upper.SetImageResource(UserProfile.Current.CurrentUpperbody);
+            Upper.SetImageResource(WardrobeMapping.mapping.GetResource(UserProfile.Current.CurrentUpperbody));
 
-            Lower.SetImageResource(UserProfile.Current.CurrentLowerbody);
+            Lower.SetImageResource(WardrobeMapping.mapping.GetResource(UserProfile.Current.CurrentLowerbody));
         }
     }
 }

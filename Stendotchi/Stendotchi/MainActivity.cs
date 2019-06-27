@@ -15,6 +15,7 @@ namespace Stendotchi
         BottomNavigationView bottomNavigation;
         protected override void OnCreate(Bundle bundle)
         {
+            WardrobeMapping.Initialize();
             System.Console.WriteLine("ping");
             RequestWindowFeature(WindowFeatures.NoTitle);
             base.OnCreate(bundle);
@@ -58,8 +59,10 @@ namespace Stendotchi
             ImageButton level = FindViewById<ImageButton>(Resource.Id.levelknop);
             level.Click += delegate
             {
-                int mijnlvl = 7;
-                Toast.MakeText(this.BaseContext, $"Je bent momenteel level {mijnlvl}", ToastLength.Short).Show();
+                int xp = UserProfile.Current.UserXp;
+                var lrxp = UserProfile.Current.GetUserLevelAndRemainingXp();
+                Toast.MakeText(this.BaseContext, $"Je bent momenteel level {lrxp.level} met {xp} xp." +
+                    $"\nNog {lrxp.remainingxp} xp tot level {lrxp.level + 1}!", ToastLength.Short).Show();
             };
 
             UserProfile.Current = new UserProfile();

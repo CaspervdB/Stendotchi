@@ -78,8 +78,7 @@ namespace Stendotchi
     {
         public static List<Reminder> GetReminders() => new List<Reminder>() {
             new Reminder(){text="Heb je al gefietst vandaag?", id = 0, type = ReminderType.Exercise},
-            new Reminder(){text="Heb je vandaag wel gegeten?", id = 1, type = ReminderType.Eat},
-            new Reminder(){text="Ik en de jongens in creatieve modus", id = 2, type = ReminderType.Unknown}
+            new Reminder(){text="Heb je vandaag wel gegeten?", id = 1, type = ReminderType.Eat}
         };
     }
 

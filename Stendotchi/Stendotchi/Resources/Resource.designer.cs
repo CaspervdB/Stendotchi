@@ -3697,31 +3697,34 @@ namespace Stendotchi
 			public const int next = 2130903071;
 			
 			// aapt resource value: 0x7f030020
-			public const int previous = 2130903072;
+			public const int nhlstendenshirt = 2130903072;
 			
 			// aapt resource value: 0x7f030021
-			public const int reminder = 2130903073;
+			public const int previous = 2130903073;
 			
 			// aapt resource value: 0x7f030022
-			public const int settings = 2130903074;
+			public const int reminder = 2130903074;
 			
 			// aapt resource value: 0x7f030023
-			public const int shower = 2130903075;
+			public const int settings = 2130903075;
 			
 			// aapt resource value: 0x7f030024
-			public const int sink = 2130903076;
+			public const int shower = 2130903076;
 			
 			// aapt resource value: 0x7f030025
-			public const int testhaar1 = 2130903077;
+			public const int sink = 2130903077;
 			
 			// aapt resource value: 0x7f030026
-			public const int testHoofd1 = 2130903078;
+			public const int testhaar1 = 2130903078;
 			
 			// aapt resource value: 0x7f030027
-			public const int testLegs1 = 2130903079;
+			public const int testHoofd1 = 2130903079;
 			
 			// aapt resource value: 0x7f030028
-			public const int testTorso1 = 2130903080;
+			public const int testLegs1 = 2130903080;
+			
+			// aapt resource value: 0x7f030029
+			public const int testTorso1 = 2130903081;
 			
 			static Mipmap()
 			{

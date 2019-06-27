@@ -25,8 +25,10 @@ namespace Stendotchi
                 showNewUserDialog(ctx);
 
                 this.CurrentTopper = 0;
-                this.CurrentUpperbody = 0;
-                this.CurrentLowerbody = 0;
+                this.CurrentUpperbody = 9;
+                this.CurrentLowerbody = 14;
+                this.UserXp = 0;
+
                 Xamarin.Essentials.SecureStorage.SetAsync("initialized", "yes").GetAwaiter().GetResult();
             }
             else
@@ -49,6 +51,26 @@ namespace Stendotchi
             dialog.SetView(input);
             alert.SetButton("OK.", (c, ev) => { this.Username = input.Text; });
             alert.Show();
+        }
+
+        public (int level, int remainingxp) GetUserLevelAndRemainingXp()
+        {
+            // elke level is n * 50 xp
+            var xp = this.UserXp;
+
+            int i = 0;
+            // max level is 100
+            int cxp = 0;
+
+            for(cxp = 0; cxp < xp; i++)
+            {
+                cxp += i * 50;
+                i += 1;
+            }
+
+            int remaining = ((i + 1) * 50) - (xp - cxp);
+
+            return (i, remaining);
         }
 
         public string Username
@@ -103,6 +125,20 @@ namespace Stendotchi
             set
             {
                 Xamarin.Essentials.SecureStorage.SetAsync("lower", value.ToString()).GetAwaiter().GetResult();
+            }
+        }
+
+        public int UserXp
+        {
+            get
+            {
+                var res = Xamarin.Essentials.SecureStorage.GetAsync("xp").GetAwaiter().GetResult();
+                return int.Parse(res);
+            }
+
+            set
+            {
+                Xamarin.Essentials.SecureStorage.SetAsync("xp", value.ToString()).GetAwaiter().GetResult();
             }
         }
     }

@@ -16,11 +16,13 @@ namespace Stendotchi
     {
         public string Name;
         public int Mipmap;
+        public int Id;
 
-        public WardrobeItem(string name, int mipmap)
+        public WardrobeItem(string name, int mipmap, int id)
         {
             this.Name = name;
             this.Mipmap = mipmap;
+            this.Id = id;
         }
     }
 }

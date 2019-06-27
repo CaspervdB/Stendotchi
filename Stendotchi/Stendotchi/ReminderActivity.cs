@@ -103,6 +103,7 @@ namespace Stendotchi
                 using (FileStream fs = new FileStream(file.Path, FileMode.Open))
                 {
                     var objects = await RestHelper.DetectObjects(fs);
+                    //if(objects.Any(x => x == "")
                     Toast.MakeText(this.BaseContext, string.Join(", ", objects), ToastLength.Short).Show();
                     spinner.Visibility = ViewStates.Invisible;
                     return;

@@ -38,9 +38,9 @@ namespace Stendotchi
 
         public void SaveCharacter()
         {
-            UserProfile.Current.CurrentTopper = this._topper.Mipmap;
-            UserProfile.Current.CurrentUpperbody = this._upperBody.Mipmap;
-            UserProfile.Current.CurrentLowerbody = this._lowerBody.Mipmap;
+            UserProfile.Current.CurrentTopper = WardrobeMapping.mapping.GetMappingId(this._topper.Mipmap);
+            UserProfile.Current.CurrentUpperbody = WardrobeMapping.mapping.GetMappingId(this._upperBody.Mipmap);
+            UserProfile.Current.CurrentLowerbody = WardrobeMapping.mapping.GetMappingId(this._lowerBody.Mipmap);
             Toast.MakeText(_activity, "Jouw nieuwe Stendotchi is opgeslagen!", ToastLength.Short).Show();
             _activity.Finish();
         }
