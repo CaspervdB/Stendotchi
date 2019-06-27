@@ -33,7 +33,9 @@ namespace Stendotchi
             Android.App.AlertDialog.Builder dialog = new AlertDialog.Builder(this);
             AlertDialog alert = dialog.Create();
             //alert.SetTitle("Title");  Title not needed here.
-            alert.SetMessage("Je hebt gedoucht.");
+            UserProfile.Current.UserXp += 15;
+            alert.SetMessage($"Je hebt gedouched! Je wordt beloond met 15 XP." +
+                $"\nJe nieuwe level is {UserProfile.Current.GetUserLevelAndRemainingXp().level}");
             alert.SetButton("OK.", (c, ev) => { });
             alert.Show();
         }
@@ -43,7 +45,9 @@ namespace Stendotchi
             Android.App.AlertDialog.Builder dialog = new AlertDialog.Builder(this);
             AlertDialog alert = dialog.Create();
             //alert.SetTitle("Title");  Title not needed here.
-            alert.SetMessage("Je hebt je tanden gepoetst.");
+            UserProfile.Current.UserXp += 15;
+            alert.SetMessage($"Je hebt je tanden gepoetst! Je wordt beloond met 15 XP." +
+                $"\nJe nieuwe level is {UserProfile.Current.GetUserLevelAndRemainingXp().level}");
             alert.SetButton("OK.", (c, ev) => { });
             alert.Show();
         }

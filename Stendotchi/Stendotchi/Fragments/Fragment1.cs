@@ -35,7 +35,7 @@ namespace Stendotchi.Fragments
         {
             base.OnViewCreated(view, savedInstanceState);
             //Verbind button in axml met cs code
-            Button buttonBathHome = view.FindViewById<Button>(Resource.Id.buttonBathHome);
+            ImageButton buttonBathHome = view.FindViewById<ImageButton>(Resource.Id.buttonBathHome);
             Button buttonBedHome = view.FindViewById<Button>(Resource.Id.buttonBedHome);
 
             //Set activity

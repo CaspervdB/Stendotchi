@@ -103,8 +103,32 @@ namespace Stendotchi
                 using (FileStream fs = new FileStream(file.Path, FileMode.Open))
                 {
                     var objects = await RestHelper.DetectObjects(fs);
-                    //if(objects.Any(x => x == "")
-                    Toast.MakeText(this.BaseContext, string.Join(", ", objects), ToastLength.Short).Show();
+                    switch((ReminderType)this.Intent.GetIntExtra("type", (int)ReminderType.Unknown))
+                    {
+                        case ReminderType.Drink:
+                            if (objects.Contains("water_bottle"))
+                            {
+                                // Ja! gedronken!
+                                UserProfile.Current.UserXp += 80;
+                                Toast.MakeText(this.BaseContext, $"Je hebt gedronken! Je wordt beloond met 80 XP." +
+                                    $"\nJe nieuwe level is {UserProfile.Current.GetUserLevelAndRemainingXp().level}",
+                                    ToastLength.Short).Show();
+                                this.Finish();
+                            }
+                            break;
+
+                        case ReminderType.Exercise:
+                            if(objects.Any(x => x.ToLower().Contains("bicycle")))
+                            {
+                                // Ja! gefietst!
+                                UserProfile.Current.UserXp += 200;
+                                Toast.MakeText(this.BaseContext, $"Je hebt gefietst! Je wordt beloond met 200 XP." +
+                                    $"\nJe nieuwe level is {UserProfile.Current.GetUserLevelAndRemainingXp().level}",
+                                    ToastLength.Short).Show();
+                                this.Finish();
+                            }
+                            break;
+                    }
                     spinner.Visibility = ViewStates.Invisible;
                     return;
                 }

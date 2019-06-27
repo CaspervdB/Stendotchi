@@ -24,9 +24,8 @@ namespace Stendotchi.Fragments
         public override void OnViewCreated(View view, Bundle savedInstanceState)
         {
             base.OnViewCreated(view, savedInstanceState);
-            view.FindViewById<Button>(Resource.Id.wardbtn).Click += delegate
+            view.FindViewById<ImageButton>(Resource.Id.wardbtn).Click += delegate
             {
-                Toast.MakeText(view.Context, "Wardrobe button clicked", ToastLength.Short).Show();
                 this.StartActivity(new Intent(view.Context, typeof(WardrobeActivity)));
             };
         }

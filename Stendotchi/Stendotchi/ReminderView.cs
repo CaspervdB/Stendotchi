@@ -42,6 +42,10 @@ namespace Stendotchi
                     viewtype = "Food";
                     break;
 
+                case ReminderType.Drink:
+                    viewtype = "Drink";
+                    break;
+
                 case ReminderType.Exercise:
                     viewtype = "Exercise";
                     break;

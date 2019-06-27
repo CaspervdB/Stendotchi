@@ -6,15 +6,19 @@ using Android.Support.Design.Widget;
 using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
+using System.Threading.Tasks;
 
 namespace Stendotchi
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/hart")]
+    [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/logobuttond")]
     public class MainActivity : AppCompatActivity
     {
         BottomNavigationView bottomNavigation;
         protected override void OnCreate(Bundle bundle)
         {
+            // Heroku runt niet 24/7 dus pingen we onze server zodat de kans 
+            // groter is dat hij aan staat als we bij reminders aan komen.
+            Task.Run(async () => { await RestHelper.PingHerokuAsync(); });
             WardrobeMapping.Initialize();
             System.Console.WriteLine("ping");
             RequestWindowFeature(WindowFeatures.NoTitle);

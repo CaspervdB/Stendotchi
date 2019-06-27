@@ -43,6 +43,18 @@ namespace Stendotchi
             }
         }
 
+        // We zorgen er voor dat heroku online is.
+        public static async Task PingHerokuAsync()
+        {
+            using (var client = new HttpClient())
+            {
+                var response = await client.GetAsync("https://stendotchi-test.herokuapp.com/");
+                var resp = await response.Content.ReadAsStringAsync();
+                var parse = JArray.Parse(resp);
+            }
+            Console.WriteLine("Heroku is nu waarschijnlijk online.");
+        }
+
         public static IRestResponse Post(string baseUrl, string resourceUrl, string json)
         {
             var client = new RestClient(baseUrl);

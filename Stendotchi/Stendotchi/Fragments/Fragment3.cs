@@ -1,6 +1,7 @@
 ﻿using Android.OS;
 using Android.Support.V4.App;
 using Android.Views;
+using Android.Widget;
 
 namespace Stendotchi.Fragments
 {
@@ -19,6 +20,14 @@ namespace Stendotchi.Fragments
             return frag3;
         }
 
+        public override void OnViewCreated(View view, Bundle savedInstanceState)
+        {
+            base.OnViewCreated(view, savedInstanceState);
+            view.FindViewById<ImageButton>(Resource.Id.gameimg).Click += delegate
+            {
+                Toast.MakeText(view.Context, "Sorry! Er zijn nog geen minigames beschikbaar.", ToastLength.Short).Show();
+            };
+        }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {

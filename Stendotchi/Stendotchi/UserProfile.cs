@@ -39,18 +39,24 @@ namespace Stendotchi
 
         private void showNewUserDialog(Activity ctx)
         {
-            Android.App.AlertDialog.Builder dialog = new AlertDialog.Builder(ctx);
-            AlertDialog alert = dialog.Create();
-            //alert.SetTitle("Title");  Title not needed here.
-            alert.SetTitle("Welkom bij Stendotchi. Wat is jouw naam?");
-            EditText input = new EditText(ctx);
-            input.Text = "Gebruiker";
-            input.Visibility = ViewStates.Visible;
-            input.Enabled = true;
-            input.InputType = Android.Text.InputTypes.TextVariationNormal;
-            dialog.SetView(input);
-            alert.SetButton("OK.", (c, ev) => { this.Username = input.Text; });
-            alert.Show();
+            LayoutInflater layoutInflater = LayoutInflater.From(ctx);
+            View view = layoutInflater.Inflate(Resource.Layout.popupinput, null);
+            Android.Support.V7.App.AlertDialog.Builder alertbuilder = new Android.Support.V7.App.AlertDialog.Builder(ctx);
+            alertbuilder.SetView(view);
+            var userdata = view.FindViewById<EditText>(Resource.Id.stendname);
+            alertbuilder.SetCancelable(false)
+            .SetPositiveButton("Submit", delegate
+            {
+                Toast.MakeText(ctx, $"Welkom, {userdata.Text}!", ToastLength.Short).Show();
+                UserProfile.Current.Username = userdata.Text;
+            })
+            .SetNegativeButton("Cancel", delegate
+            {
+                Toast.MakeText(ctx, $"Welkom, Gebruiker!", ToastLength.Short).Show();
+                UserProfile.Current.Username = "Gebruiker";
+            });
+            Android.Support.V7.App.AlertDialog dialog = alertbuilder.Create();
+            dialog.Show();
         }
 
         public (int level, int remainingxp) GetUserLevelAndRemainingXp()

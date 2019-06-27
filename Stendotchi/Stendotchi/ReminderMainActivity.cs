@@ -51,6 +51,7 @@ namespace Stendotchi
             // Pass data
             act.PutExtra("text", r.text);
             act.PutExtra("id", r.id);
+            act.PutExtra("type", (int)r.type);
 
             // start activity
             StartActivity(act);
@@ -78,7 +79,7 @@ namespace Stendotchi
     {
         public static List<Reminder> GetReminders() => new List<Reminder>() {
             new Reminder(){text="Heb je al gefietst vandaag?", id = 0, type = ReminderType.Exercise},
-            new Reminder(){text="Heb je vandaag wel gegeten?", id = 1, type = ReminderType.Eat}
+            new Reminder(){text="Drink je wel genoeg?", id = 1, type = ReminderType.Drink}
         };
     }
 
@@ -95,7 +96,8 @@ namespace Stendotchi
         Exercise,
         Eat,
         Sleep,
-        Unknown
+        Unknown,
+        Drink
     }
 }
 

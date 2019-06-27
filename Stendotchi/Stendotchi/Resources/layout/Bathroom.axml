@@ -2,25 +2,30 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation=    "horizontal"
     android:layout_width=    "match_parent"
-    android:layout_height=    "match_parent"    >
-
+    android:layout_height=    "match_parent"    
+	android:background="@mipmap/bathroom">
+	<ImageButton
+		android:src="@mipmap/sink2"
+		android:layout_width="fill_parent"
+		android:layout_height="300dp"
+		android:layout_weight="1"
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:id="@+id/sink"
+		android:background="@null"
+		android:scaleType="fitXY"
+		android:baselineAlignBottom="false"
+		android:layout_gravity="bottom"
+		android:layout_marginBottom="100dp" />
     <ImageButton
-        android:src="@mipmap/sink"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:layout_weight="1"
-        android:minWidth="25px"
-        android:minHeight="25px"
-        android:id="@+id/sink"
-        android:scaleType="fitXY" />
-    <ImageButton
-        android:src="@mipmap/shower"
+        android:src="@mipmap/bettershower"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:minWidth="25px"
         android:minHeight="25px"
         android:scaleType="fitXY"
+		android:background="@null"
         android:id="@+id/shower"/>
 	   
 </LinearLayout>
