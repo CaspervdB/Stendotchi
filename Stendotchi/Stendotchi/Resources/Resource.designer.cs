@@ -2327,91 +2327,100 @@ namespace Stendotchi
 			public const int abc_vector_test = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int avd_hide_password = 2130837587;
-			
-			// aapt resource value: 0x7f02006a
-			public const int avd_hide_password_1 = 2130837610;
-			
-			// aapt resource value: 0x7f02006b
-			public const int avd_hide_password_2 = 2130837611;
-			
-			// aapt resource value: 0x7f02006c
-			public const int avd_hide_password_3 = 2130837612;
+			public const int achtergrond = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int avd_show_password = 2130837588;
+			public const int avd_hide_password = 2130837588;
 			
 			// aapt resource value: 0x7f02006d
-			public const int avd_show_password_1 = 2130837613;
+			public const int avd_hide_password_1 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int avd_show_password_2 = 2130837614;
+			public const int avd_hide_password_2 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int avd_show_password_3 = 2130837615;
+			public const int avd_hide_password_3 = 2130837615;
 			
 			// aapt resource value: 0x7f020055
-			public const int design_bottom_navigation_item_background = 2130837589;
+			public const int avd_show_password = 2130837589;
+			
+			// aapt resource value: 0x7f020070
+			public const int avd_show_password_1 = 2130837616;
+			
+			// aapt resource value: 0x7f020071
+			public const int avd_show_password_2 = 2130837617;
+			
+			// aapt resource value: 0x7f020072
+			public const int avd_show_password_3 = 2130837618;
 			
 			// aapt resource value: 0x7f020056
-			public const int design_fab_background = 2130837590;
+			public const int design_bottom_navigation_item_background = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int design_ic_visibility = 2130837591;
+			public const int design_fab_background = 2130837591;
 			
 			// aapt resource value: 0x7f020058
-			public const int design_ic_visibility_off = 2130837592;
+			public const int design_ic_visibility = 2130837592;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_password_eye = 2130837593;
+			public const int design_ic_visibility_off = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_snackbar_background = 2130837594;
+			public const int design_password_eye = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int navigation_empty_icon = 2130837595;
+			public const int design_snackbar_background = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int notification_action_background = 2130837596;
+			public const int navigation_empty_icon = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int notification_bg = 2130837597;
+			public const int notification_action_background = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int notification_bg_low = 2130837598;
+			public const int notification_bg = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int notification_bg_low_normal = 2130837599;
+			public const int notification_bg_low = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int notification_bg_low_pressed = 2130837600;
+			public const int notification_bg_low_normal = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int notification_bg_normal = 2130837601;
+			public const int notification_bg_low_pressed = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int notification_bg_normal_pressed = 2130837602;
+			public const int notification_bg_normal = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int notification_icon_background = 2130837603;
-			
-			// aapt resource value: 0x7f020068
-			public const int notification_template_icon_bg = 2130837608;
-			
-			// aapt resource value: 0x7f020069
-			public const int notification_template_icon_low_bg = 2130837609;
+			public const int notification_bg_normal_pressed = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int notification_tile_bg = 2130837604;
+			public const int notification_icon_background = 2130837604;
+			
+			// aapt resource value: 0x7f02006b
+			public const int notification_template_icon_bg = 2130837611;
+			
+			// aapt resource value: 0x7f02006c
+			public const int notification_template_icon_low_bg = 2130837612;
 			
 			// aapt resource value: 0x7f020065
-			public const int notify_panel_notification_icon_bg = 2130837605;
+			public const int notification_tile_bg = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int tooltip_frame_dark = 2130837606;
+			public const int notify_panel_notification_icon_bg = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int tooltip_frame_light = 2130837607;
+			public const int reminder = 2130837607;
+			
+			// aapt resource value: 0x7f020068
+			public const int settings = 2130837608;
+			
+			// aapt resource value: 0x7f020069
+			public const int tooltip_frame_dark = 2130837609;
+			
+			// aapt resource value: 0x7f02006a
+			public const int tooltip_frame_light = 2130837610;
 			
 			static Drawable()
 			{
@@ -2429,41 +2438,41 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090032
 			public const int ALT = 2131296306;
 			
-			// aapt resource value: 0x7f0900fd
-			public const int AvatarLowerBody = 2131296509;
-			
-			// aapt resource value: 0x7f0900fb
-			public const int AvatarTopper = 2131296507;
+			// aapt resource value: 0x7f0900fe
+			public const int AvatarLowerBody = 2131296510;
 			
 			// aapt resource value: 0x7f0900fc
-			public const int AvatarUpperBody = 2131296508;
+			public const int AvatarTopper = 2131296508;
+			
+			// aapt resource value: 0x7f0900fd
+			public const int AvatarUpperBody = 2131296509;
+			
+			// aapt resource value: 0x7f0900ea
+			public const int ButtonBGMOff = 2131296490;
 			
 			// aapt resource value: 0x7f0900e9
-			public const int ButtonBGMOff = 2131296489;
-			
-			// aapt resource value: 0x7f0900e8
-			public const int ButtonBGMOn = 2131296488;
+			public const int ButtonBGMOn = 2131296489;
 			
 			// aapt resource value: 0x7f090091
 			public const int ButtonBath = 2131296401;
 			
-			// aapt resource value: 0x7f0900ee
-			public const int ButtonDutch = 2131296494;
+			// aapt resource value: 0x7f0900ef
+			public const int ButtonDutch = 2131296495;
 			
-			// aapt resource value: 0x7f0900ed
-			public const int ButtonEnglish = 2131296493;
+			// aapt resource value: 0x7f0900ee
+			public const int ButtonEnglish = 2131296494;
+			
+			// aapt resource value: 0x7f0900f2
+			public const int ButtonNotifOff = 2131296498;
 			
 			// aapt resource value: 0x7f0900f1
-			public const int ButtonNotifOff = 2131296497;
+			public const int ButtonNotifOn = 2131296497;
 			
-			// aapt resource value: 0x7f0900f0
-			public const int ButtonNotifOn = 2131296496;
+			// aapt resource value: 0x7f0900ec
+			public const int ButtonSFXOff = 2131296492;
 			
 			// aapt resource value: 0x7f0900eb
-			public const int ButtonSFXOff = 2131296491;
-			
-			// aapt resource value: 0x7f0900ea
-			public const int ButtonSFXOn = 2131296490;
+			public const int ButtonSFXOn = 2131296491;
 			
 			// aapt resource value: 0x7f090092
 			public const int ButtonSettings = 2131296402;
@@ -2474,8 +2483,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090034
 			public const int FUNCTION = 2131296308;
 			
-			// aapt resource value: 0x7f0900f3
-			public const int First = 2131296499;
+			// aapt resource value: 0x7f0900f4
+			public const int First = 2131296500;
 			
 			// aapt resource value: 0x7f0900c6
 			public const int FirstGlasses = 2131296454;
@@ -2483,23 +2492,29 @@ namespace Stendotchi
 			// aapt resource value: 0x7f0900c7
 			public const int FirstHats = 2131296455;
 			
-			// aapt resource value: 0x7f0900e4
-			public const int FirstPants = 2131296484;
+			// aapt resource value: 0x7f0900e5
+			public const int FirstPants = 2131296485;
 			
 			// aapt resource value: 0x7f0900c8
 			public const int FirstShirts = 2131296456;
 			
-			// aapt resource value: 0x7f090102
-			public const int Gezondheid = 2131296514;
+			// aapt resource value: 0x7f09010c
+			public const int Gezondheid = 2131296524;
+			
+			// aapt resource value: 0x7f090100
+			public const int HeadView = 2131296512;
 			
 			// aapt resource value: 0x7f090097
 			public const int KopCharCreator = 2131296407;
 			
+			// aapt resource value: 0x7f090108
+			public const int LowerView = 2131296520;
+			
 			// aapt resource value: 0x7f090035
 			public const int META = 2131296309;
 			
-			// aapt resource value: 0x7f090104
-			public const int Minigames = 2131296516;
+			// aapt resource value: 0x7f09010e
+			public const int Minigames = 2131296526;
 			
 			// aapt resource value: 0x7f0900b5
 			public const int NewCharButtonsBody = 2131296437;
@@ -2516,23 +2531,26 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090037
 			public const int SYM = 2131296311;
 			
-			// aapt resource value: 0x7f090103
-			public const int Style = 2131296515;
+			// aapt resource value: 0x7f09010d
+			public const int Style = 2131296525;
 			
-			// aapt resource value: 0x7f0900ec
-			public const int TextLanguage = 2131296492;
+			// aapt resource value: 0x7f0900ed
+			public const int TextLanguage = 2131296493;
 			
-			// aapt resource value: 0x7f0900ef
-			public const int TextNotif = 2131296495;
+			// aapt resource value: 0x7f0900f0
+			public const int TextNotif = 2131296496;
 			
-			// aapt resource value: 0x7f0900e7
-			public const int TextSound = 2131296487;
+			// aapt resource value: 0x7f0900e8
+			public const int TextSound = 2131296488;
 			
-			// aapt resource value: 0x7f0900f2
-			public const int TextVersion = 2131296498;
+			// aapt resource value: 0x7f0900f3
+			public const int TextVersion = 2131296499;
 			
-			// aapt resource value: 0x7f0900d4
-			public const int action0 = 2131296468;
+			// aapt resource value: 0x7f090104
+			public const int UpperView = 2131296516;
+			
+			// aapt resource value: 0x7f0900d5
+			public const int action0 = 2131296469;
 			
 			// aapt resource value: 0x7f09007c
 			public const int action_bar = 2131296380;
@@ -2555,17 +2573,17 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09005a
 			public const int action_bar_title = 2131296346;
 			
-			// aapt resource value: 0x7f0900d1
-			public const int action_container = 2131296465;
+			// aapt resource value: 0x7f0900d2
+			public const int action_container = 2131296466;
 			
 			// aapt resource value: 0x7f09007d
 			public const int action_context_bar = 2131296381;
 			
-			// aapt resource value: 0x7f0900d8
-			public const int action_divider = 2131296472;
+			// aapt resource value: 0x7f0900d9
+			public const int action_divider = 2131296473;
 			
-			// aapt resource value: 0x7f0900d2
-			public const int action_image = 2131296466;
+			// aapt resource value: 0x7f0900d3
+			public const int action_image = 2131296467;
 			
 			// aapt resource value: 0x7f090003
 			public const int action_menu_divider = 2131296259;
@@ -2582,14 +2600,14 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09005c
 			public const int action_mode_close_button = 2131296348;
 			
-			// aapt resource value: 0x7f090105
-			public const int action_settings = 2131296517;
+			// aapt resource value: 0x7f09010f
+			public const int action_settings = 2131296527;
 			
-			// aapt resource value: 0x7f0900d3
-			public const int action_text = 2131296467;
+			// aapt resource value: 0x7f0900d4
+			public const int action_text = 2131296468;
 			
-			// aapt resource value: 0x7f0900e1
-			public const int actions = 2131296481;
+			// aapt resource value: 0x7f0900e2
+			public const int actions = 2131296482;
 			
 			// aapt resource value: 0x7f09005d
 			public const int activity_chooser_view_content = 2131296349;
@@ -2633,11 +2651,29 @@ namespace Stendotchi
 			// aapt resource value: 0x7f0900ce
 			public const int bottom_navigation = 2131296462;
 			
+			// aapt resource value: 0x7f0900ff
+			public const int button1back = 2131296511;
+			
+			// aapt resource value: 0x7f090101
+			public const int button1next = 2131296513;
+			
+			// aapt resource value: 0x7f090103
+			public const int button2back = 2131296515;
+			
+			// aapt resource value: 0x7f090105
+			public const int button2next = 2131296517;
+			
+			// aapt resource value: 0x7f090107
+			public const int button3back = 2131296519;
+			
+			// aapt resource value: 0x7f090109
+			public const int button3next = 2131296521;
+			
 			// aapt resource value: 0x7f090063
 			public const int buttonPanel = 2131296355;
 			
-			// aapt resource value: 0x7f0900d5
-			public const int cancel_action = 2131296469;
+			// aapt resource value: 0x7f0900d6
+			public const int cancel_action = 2131296470;
 			
 			// aapt resource value: 0x7f090045
 			public const int center = 2131296325;
@@ -2729,8 +2765,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090073
 			public const int checkbox = 2131296371;
 			
-			// aapt resource value: 0x7f0900dd
-			public const int chronometer = 2131296477;
+			// aapt resource value: 0x7f0900de
+			public const int chronometer = 2131296478;
 			
 			// aapt resource value: 0x7f09004e
 			public const int clip_horizontal = 2131296334;
@@ -2789,8 +2825,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090030
 			public const int end = 2131296304;
 			
-			// aapt resource value: 0x7f0900e3
-			public const int end_padder = 2131296483;
+			// aapt resource value: 0x7f0900e4
+			public const int end_padder = 2131296484;
 			
 			// aapt resource value: 0x7f09003f
 			public const int enterAlways = 2131296319;
@@ -2831,11 +2867,11 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09000a
 			public const int ghost_view = 2131296266;
 			
-			// aapt resource value: 0x7f0900f7
-			public const int glasses = 2131296503;
+			// aapt resource value: 0x7f0900f8
+			public const int glasses = 2131296504;
 			
-			// aapt resource value: 0x7f0900f4
-			public const int hats = 2131296500;
+			// aapt resource value: 0x7f0900f5
+			public const int hats = 2131296501;
 			
 			// aapt resource value: 0x7f090005
 			public const int home = 2131296261;
@@ -2843,11 +2879,14 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090021
 			public const int homeAsUp = 2131296289;
 			
+			// aapt resource value: 0x7f0900d1
+			public const int homeknop = 2131296465;
+			
 			// aapt resource value: 0x7f090062
 			public const int icon = 2131296354;
 			
-			// aapt resource value: 0x7f0900e2
-			public const int icon_group = 2131296482;
+			// aapt resource value: 0x7f0900e3
+			public const int icon_group = 2131296483;
 			
 			// aapt resource value: 0x7f09003a
 			public const int ifRoom = 2131296314;
@@ -2855,11 +2894,11 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09005f
 			public const int image = 2131296351;
 			
-			// aapt resource value: 0x7f0900f8
-			public const int imageView1 = 2131296504;
+			// aapt resource value: 0x7f0900f9
+			public const int imageView1 = 2131296505;
 			
-			// aapt resource value: 0x7f0900de
-			public const int info = 2131296478;
+			// aapt resource value: 0x7f0900df
+			public const int info = 2131296479;
 			
 			// aapt resource value: 0x7f090059
 			public const int italic = 2131296345;
@@ -2879,8 +2918,14 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090018
 			public const int line3 = 2131296280;
 			
-			// aapt resource value: 0x7f0900e6
-			public const int linearLayout1 = 2131296486;
+			// aapt resource value: 0x7f0900e7
+			public const int linearLayout1 = 2131296487;
+			
+			// aapt resource value: 0x7f090102
+			public const int linearLayout2 = 2131296514;
+			
+			// aapt resource value: 0x7f090106
+			public const int linearLayout3 = 2131296518;
 			
 			// aapt resource value: 0x7f09001d
 			public const int listMode = 2131296285;
@@ -2894,14 +2939,14 @@ namespace Stendotchi
 			// aapt resource value: 0x7f0900c9
 			public const int main_content = 2131296457;
 			
-			// aapt resource value: 0x7f090101
-			public const int masked = 2131296513;
+			// aapt resource value: 0x7f09010b
+			public const int masked = 2131296523;
 			
-			// aapt resource value: 0x7f0900d7
-			public const int media_actions = 2131296471;
+			// aapt resource value: 0x7f0900d8
+			public const int media_actions = 2131296472;
 			
-			// aapt resource value: 0x7f0900fa
-			public const int message = 2131296506;
+			// aapt resource value: 0x7f0900fb
+			public const int message = 2131296507;
 			
 			// aapt resource value: 0x7f090031
 			public const int middle = 2131296305;
@@ -2924,20 +2969,20 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09001e
 			public const int normal = 2131296286;
 			
-			// aapt resource value: 0x7f0900e0
-			public const int notification_background = 2131296480;
+			// aapt resource value: 0x7f0900e1
+			public const int notification_background = 2131296481;
+			
+			// aapt resource value: 0x7f0900db
+			public const int notification_main_column = 2131296475;
 			
 			// aapt resource value: 0x7f0900da
-			public const int notification_main_column = 2131296474;
-			
-			// aapt resource value: 0x7f0900d9
-			public const int notification_main_column_container = 2131296473;
+			public const int notification_main_column_container = 2131296474;
 			
 			// aapt resource value: 0x7f09008c
 			public const int okbtn = 2131296396;
 			
-			// aapt resource value: 0x7f0900f6
-			public const int pants = 2131296502;
+			// aapt resource value: 0x7f0900f7
+			public const int pants = 2131296503;
 			
 			// aapt resource value: 0x7f09004c
 			public const int parallax = 2131296332;
@@ -2972,11 +3017,11 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09004a
 			public const int right = 2131296330;
 			
-			// aapt resource value: 0x7f0900df
-			public const int right_icon = 2131296479;
+			// aapt resource value: 0x7f0900e0
+			public const int right_icon = 2131296480;
 			
-			// aapt resource value: 0x7f0900db
-			public const int right_side = 2131296475;
+			// aapt resource value: 0x7f0900dc
+			public const int right_side = 2131296476;
 			
 			// aapt resource value: 0x7f09000c
 			public const int save_image_matrix = 2131296268;
@@ -3002,8 +3047,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090068
 			public const int scrollView = 2131296360;
 			
-			// aapt resource value: 0x7f0900e5
-			public const int scrollView1 = 2131296485;
+			// aapt resource value: 0x7f0900e6
+			public const int scrollView1 = 2131296486;
 			
 			// aapt resource value: 0x7f090055
 			public const int scrollable = 2131296341;
@@ -3044,8 +3089,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f0900d0
 			public const int settings = 2131296464;
 			
-			// aapt resource value: 0x7f0900f5
-			public const int shirts = 2131296501;
+			// aapt resource value: 0x7f0900f6
+			public const int shirts = 2131296502;
 			
 			// aapt resource value: 0x7f090074
 			public const int shortcut = 2131296372;
@@ -3095,8 +3140,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09004b
 			public const int start = 2131296331;
 			
-			// aapt resource value: 0x7f0900d6
-			public const int status_bar_latest_event_content = 2131296470;
+			// aapt resource value: 0x7f0900d7
+			public const int status_bar_latest_event_content = 2131296471;
 			
 			// aapt resource value: 0x7f090076
 			public const int submenuarrow = 2131296374;
@@ -3125,14 +3170,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09008b
 			public const int textView1 = 2131296395;
 			
-			// aapt resource value: 0x7f0900fe
-			public const int textView2 = 2131296510;
-			
-			// aapt resource value: 0x7f0900ff
-			public const int textView3 = 2131296511;
-			
-			// aapt resource value: 0x7f0900f9
-			public const int textViewDbResults = 2131296505;
+			// aapt resource value: 0x7f0900fa
+			public const int textViewDbResults = 2131296506;
 			
 			// aapt resource value: 0x7f0900c5
 			public const int text_input_password_toggle = 2131296453;
@@ -3143,8 +3182,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090015
 			public const int textinput_error = 2131296277;
 			
-			// aapt resource value: 0x7f0900dc
-			public const int time = 2131296476;
+			// aapt resource value: 0x7f0900dd
+			public const int time = 2131296477;
 			
 			// aapt resource value: 0x7f090094
 			public const int timeButton = 2131296404;
@@ -3203,8 +3242,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090016
 			public const int view_offset_helper = 2131296278;
 			
-			// aapt resource value: 0x7f090100
-			public const int visible = 2131296512;
+			// aapt resource value: 0x7f09010a
+			public const int visible = 2131296522;
 			
 			// aapt resource value: 0x7f09003c
 			public const int withText = 2131296316;
@@ -3547,43 +3586,64 @@ namespace Stendotchi
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int ic_launcher = 2130903040;
+			public const int achtergrond = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int ic_launcher_foreground = 2130903041;
+			public const int achtergrond_huge = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int ic_launcher_round = 2130903042;
+			public const int achtergrond_kleiner = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int icon = 2130903043;
+			public const int home = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int knop = 2130903044;
+			public const int ic_launcher = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int knoplinks = 2130903045;
+			public const int ic_launcher_foreground = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int knoprechts = 2130903046;
+			public const int ic_launcher_round = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int shower = 2130903047;
+			public const int icon = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int sink = 2130903048;
+			public const int knop = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int testhaar1 = 2130903049;
+			public const int knoplinks = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int testHoofd1 = 2130903050;
+			public const int knoprechts = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int testLegs1 = 2130903051;
+			public const int manneke = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int testTorso1 = 2130903052;
+			public const int reminder = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int settings = 2130903053;
+			
+			// aapt resource value: 0x7f03000e
+			public const int shower = 2130903054;
+			
+			// aapt resource value: 0x7f03000f
+			public const int sink = 2130903055;
+			
+			// aapt resource value: 0x7f030010
+			public const int testhaar1 = 2130903056;
+			
+			// aapt resource value: 0x7f030011
+			public const int testHoofd1 = 2130903057;
+			
+			// aapt resource value: 0x7f030012
+			public const int testLegs1 = 2130903058;
+			
+			// aapt resource value: 0x7f030013
+			public const int testTorso1 = 2130903059;
 			
 			static Mipmap()
 			{

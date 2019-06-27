@@ -41,36 +41,95 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#000"
         android:layout_weight="33"
-        android:layout_gravity="left">
-        <LinearLayout>
-            <TextView
-                android:text="Text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView2"
-                android:background="#f236"
-                android:gravity="left"
-                android:layout_weight = "100" />
-            <TextView
-                android:text="Text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3"
-                android:background="#f23000"
-                android:gravity="center"
-                android:layout_weight = "40"  />
-            <TextView
-                android:text="Text"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:minWidth="25px"
-                android:minHeight="25px"
-                android:id="@+id/textView1"
-                android:background="#f11"
-                android:gravity="right"
-                android:layout_weight = "100" />
+        android:layout_gravity="left"
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_marginTop="0.0dp"
+        android:layout_marginRight="0.0dp">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="#000"
+            android:id="@+id/linearLayout1"
+            android:layout_marginBottom="0dp" >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="&lt;back"
+                android:id="@+id/button1back" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+                android:layout_width="220.0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/HeadView"
+                android:layout_marginRight="0dp" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/button1next"
+                android:text="Next&gt;"
+                android:layout_marginLeft="0dp" />
         </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/linearLayout2"
+            android:layout_marginBottom="0dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="&lt;back"
+                android:id="@+id/button2back" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+
+                android:layout_height="match_parent"
+                android:layout_width="220.0dp"
+                android:id="@+id/UpperView" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Next&gt;"
+                android:id="@+id/button2next" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/linearLayout3"
+            android:layout_marginBottom="0dp"
+            android:background="#f89600">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="&lt;back"
+                android:id="@+id/button3back" />
+            <ImageView
+                android:src="@android:drawable/ic_menu_gallery"
+
+                android:layout_height="match_parent"
+                android:layout_width="220.0dp"
+                android:id="@+id/LowerView" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Next&gt;"
+                android:id="@+id/button3next" />
+
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>

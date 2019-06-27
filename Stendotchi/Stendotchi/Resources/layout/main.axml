@@ -28,26 +28,43 @@
 			android:minWidth="25px"
 			android:maxWidth="25px"
 			android:minHeight="25px">
-			<Button
-				android:text="Reminders"
-				android:layout_width="50dp"
-				android:layout_marginTop="60dp"
-				android:layout_height="50dp"
-				android:layout_gravity="right"
-				android:id="@+id/reminders" />
-			<Button
-				android:text="Settings"
-				android:layout_marginTop="105dp"
-				android:layout_width="50dp"
-				android:layout_height="50dp"
-				android:layout_gravity="right"
-				android:id="@+id/settings" />
-			<ImageButton
-				android:text="lvl"
-				android:layout_marginTop="55dp"
-				android:layout_width="50dp"
-				android:layout_height="50dp"/>
 		</FrameLayout>
+
+		<ImageButton
+			android:text="Reminders"
+			android:layout_width="50dp"
+			android:layout_marginTop="60dp"
+			android:layout_height="50dp"
+			android:layout_gravity="right"
+			android:id="@+id/reminders"
+			android:src="@drawable/reminder"
+			android:scaleType="fitXY"
+			android:background="@null"
+			android:layout_alignParentRight="true"/>
+		<ImageButton
+			android:text="Settings"
+			android:layout_marginTop="105dp"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:layout_gravity="right"
+			android:id="@+id/settings" 
+			android:src="@drawable/settings"
+			android:scaleType="fitXY"
+			android:background="@null"
+			android:layout_alignParentRight="true"/>
+		<ImageButton
+			android:text="lvl"
+			android:layout_marginTop="60dp"
+			android:layout_width="50dp"
+			android:layout_height="50dp"/>
+		<ImageButton
+			android:layout_marginTop="105dp"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:id="@+id/homeknop" 
+			android:src="@mipmap/home"
+			android:scaleType="fitXY"
+			android:background="@null"/>
 
 		<android.support.design.widget.BottomNavigationView
 				android:minWidth="25px"
