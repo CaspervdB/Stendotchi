@@ -16,6 +16,7 @@ namespace Stendotchi
         BottomNavigationView bottomNavigation;
         protected override void OnCreate(Bundle bundle)
         {
+
             System.Console.WriteLine("ping");
             RequestWindowFeature(WindowFeatures.NoTitle);
             base.OnCreate(bundle);
@@ -54,6 +55,13 @@ namespace Stendotchi
             {
                 LoadFragment(Resource.Id.home);
                 bottomNavigation.Selected = false;
+            };
+
+            ImageButton level = FindViewById<ImageButton>(Resource.Id.levelknop);
+            level.Click += delegate
+            {
+                int mijnlvl = 7;
+                Toast.MakeText(this.BaseContext, $"Je bent momenteel level {mijnlvl}", ToastLength.Short).Show();
             };
 
             LoadFragment(Resource.Id.home);

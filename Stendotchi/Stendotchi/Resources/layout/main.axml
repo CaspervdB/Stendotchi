@@ -28,7 +28,7 @@
 			android:layout_height="50dp"
 			android:layout_gravity="right"
 			android:id="@+id/reminders"
-			android:src="@drawable/reminder"
+			android:src="@mipmap/reminder"
 			android:scaleType="fitXY"
 			android:background="@null"
 			android:layout_alignParentRight="true"/>
@@ -39,7 +39,7 @@
 			android:layout_height="50dp"
 			android:layout_gravity="right"
 			android:id="@+id/settings" 
-			android:src="@drawable/settings"
+			android:src="@mipmap/settings"
 			android:scaleType="fitXY"
 			android:background="@null"
 			android:layout_alignParentRight="true"/>
@@ -47,7 +47,11 @@
 			android:text="lvl"
 			android:layout_marginTop="0dp"
 			android:layout_width="50dp"
-			android:layout_height="50dp"/>
+			android:layout_height="50dp"
+			android:src="@mipmap/level"
+			android:id="@+id/levelknop" 
+			android:scaleType="fitXY"
+			android:background="@null"/>
 		<ImageButton
 			android:layout_marginTop="50dp"
 			android:layout_width="50dp"

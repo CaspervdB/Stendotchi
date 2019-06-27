@@ -27,8 +27,13 @@ namespace Stendotchi.Fragments
         {
             View view = inflater.Inflate(Resource.Layout.fragment1, container, false);
 
-            //BUTTONS OP DEZE MANIER WERKT NIET
+            var ignored = base.OnCreateView(inflater, container, savedInstanceState);
+            return inflater.Inflate(Resource.Layout.fragment1, null);
+        }
 
+        public override void OnViewCreated(View view, Bundle savedInstanceState)
+        {
+            base.OnViewCreated(view, savedInstanceState);
             //Verbind button in axml met cs code
             Button buttonBathHome = view.FindViewById<Button>(Resource.Id.buttonBathHome);
             Button buttonBedHome = view.FindViewById<Button>(Resource.Id.buttonBedHome);
@@ -47,9 +52,6 @@ namespace Stendotchi.Fragments
                 StartActivity(bedroom);
                 Toast.MakeText(this.Context, "Hello toast!", ToastLength.Short).Show();
             };
-
-            var ignored = base.OnCreateView(inflater, container, savedInstanceState);
-            return inflater.Inflate(Resource.Layout.fragment1, null);
         }
     }
 }

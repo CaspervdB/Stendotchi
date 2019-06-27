@@ -8,7 +8,8 @@
 		android:text="Wardrobe"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:id="@+id/wardbtn" />
+		android:id="@+id/wardbtn" 
+		android:layout_marginTop="105dp"/>
 	<TextView
 		android:text="STYLE"
 		android:textAppearance="?android:attr/textAppearanceLarge"

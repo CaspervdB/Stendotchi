@@ -27,6 +27,7 @@ namespace Stendotchi.Fragments
             view.FindViewById<Button>(Resource.Id.wardbtn).Click += delegate
             {
                 Toast.MakeText(view.Context, "Wardrobe button clicked", ToastLength.Short).Show();
+                this.StartActivity(new Intent(view.Context, typeof(WardrobeActivity)));
             };
         }
 

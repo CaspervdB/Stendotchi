@@ -14,7 +14,7 @@ namespace Stendotchi
 {
    class Avatar
     {
-        private MainActivity _activity;
+        private WardrobeActivity _activity;
 
         private WardrobeItem _topper { get; set; }
         private WardrobeItem _upperBody { get; set; }
@@ -22,7 +22,7 @@ namespace Stendotchi
 
         private Wardrobe _wardrobe;
 
-        public Avatar(MainActivity activity)
+        public Avatar(WardrobeActivity activity)
         {
             // Set activity for UI manipulation.
             this._activity = activity;

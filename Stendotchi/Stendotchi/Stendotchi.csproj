@@ -83,6 +83,7 @@
     <Compile Include="ShirtsShop.cs" />
     <Compile Include="Shop.cs" />
     <Compile Include="Wardrobe.cs" />
+    <Compile Include="WardrobeActivity.cs" />
     <Compile Include="WardrobeItem.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -336,6 +337,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-nodpi\gameicon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-nodpi\fedora.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-nodpi\level.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
