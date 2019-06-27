@@ -6,16 +6,7 @@
     android:id="@+id/main_content"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/appbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark">
-        <include
-            layout="@layout/toolbar"
-            android:id="@+id/toolbar"
-            app:layout_scrollFlags="scroll|enterAlways" />
-    </android.support.design.widget.AppBarLayout>
+
     <RelativeLayout
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
@@ -33,7 +24,7 @@
 		<ImageButton
 			android:text="Reminders"
 			android:layout_width="50dp"
-			android:layout_marginTop="60dp"
+			android:layout_marginTop="0dp"
 			android:layout_height="50dp"
 			android:layout_gravity="right"
 			android:id="@+id/reminders"
@@ -43,7 +34,7 @@
 			android:layout_alignParentRight="true"/>
 		<ImageButton
 			android:text="Settings"
-			android:layout_marginTop="105dp"
+			android:layout_marginTop="50dp"
 			android:layout_width="50dp"
 			android:layout_height="50dp"
 			android:layout_gravity="right"
@@ -54,29 +45,29 @@
 			android:layout_alignParentRight="true"/>
 		<ImageButton
 			android:text="lvl"
-			android:layout_marginTop="60dp"
+			android:layout_marginTop="0dp"
 			android:layout_width="50dp"
 			android:layout_height="50dp"/>
 		<ImageButton
-			android:layout_marginTop="105dp"
+			android:layout_marginTop="50dp"
 			android:layout_width="50dp"
 			android:layout_height="50dp"
 			android:id="@+id/homeknop" 
 			android:src="@mipmap/home"
 			android:scaleType="fitXY"
 			android:background="@null"/>
-
 		<android.support.design.widget.BottomNavigationView
-				android:minWidth="25px"
-				android:minHeight="25px"
-				android:layout_width="match_parent"
-				android:layout_height="56dp"
-				android:layout_gravity="start"
-				android:layout_alignParentBottom="true"
-				android:id="@+id/bottom_navigation"
-				app:elevation="16dp"
-				app:menu="@menu/bottom_navigation_main"
-				android:background="#EAF4F9"/>
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:layout_width="match_parent"
+			android:layout_height="56dp"
+			android:layout_gravity="start"
+			android:layout_alignParentBottom="true"
+			android:id="@+id/bottom_navigation"
+			app:elevation="16dp"
+			app:menu="@menu/bottom_navigation_main"
+			android:background="#EAF4F9"
+			app:itemIconTint="@null"/>
 
     </RelativeLayout>
 </android.support.design.widget.CoordinatorLayout>

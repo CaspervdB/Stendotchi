@@ -9,7 +9,7 @@ using Android.Widget;
 
 namespace Stendotchi
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true, LaunchMode = Android.Content.PM.LaunchMode.SingleTop, Icon = "@mipmap/icon")]
+    [Activity(Label = "@string/app_name", MainLauncher = true, LaunchMode = Android.Content.PM.LaunchMode.SingleTop, Icon = "@mipmap/hart")]
     public class MainActivity : AppCompatActivity
     {
 
@@ -35,12 +35,6 @@ namespace Stendotchi
                 StartActivity(typeof(ReminderMainActivity));
             };
 
-            ImageButton homeButton = FindViewById<ImageButton>(Resource.Id.homeknop);
-            homeButton.Click += delegate
-            {
-                LoadFragment(Resource.Id.home);
-            };
-
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             if (toolbar != null)
             {
@@ -51,7 +45,16 @@ namespace Stendotchi
 
             bottomNavigation = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation);
 
+            bottomNavigation.ItemIconTintList = null;
             bottomNavigation.NavigationItemSelected += BottomNavigation_NavigationItemSelected;
+
+            ImageButton homeButton = FindViewById<ImageButton>(Resource.Id.homeknop);
+            bottomNavigation.Selected = false;
+            homeButton.Click += delegate
+            {
+                LoadFragment(Resource.Id.home);
+                bottomNavigation.Selected = false;
+            };
 
             LoadFragment(Resource.Id.home);
         }

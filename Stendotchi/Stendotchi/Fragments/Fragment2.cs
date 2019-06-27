@@ -1,6 +1,8 @@
-﻿using Android.OS;
+﻿using Android.Content;
+using Android.OS;
 using Android.Support.V4.App;
 using Android.Views;
+using Android.Widget;
 
 namespace Stendotchi.Fragments
 {
@@ -19,6 +21,14 @@ namespace Stendotchi.Fragments
             return frag2;
         }
 
+        public override void OnViewCreated(View view, Bundle savedInstanceState)
+        {
+            base.OnViewCreated(view, savedInstanceState);
+            view.FindViewById<Button>(Resource.Id.wardbtn).Click += delegate
+            {
+                Toast.MakeText(view.Context, "Wardrobe button clicked", ToastLength.Short).Show();
+            };
+        }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
