@@ -1,6 +1,9 @@
-﻿using Android.OS;
+﻿using Android.Content;
+using Android.OS;
 using Android.Support.V4.App;
+using Android.Support.V7.App;
 using Android.Views;
+using Android.Widget;
 
 namespace Stendotchi.Fragments
 {
@@ -10,6 +13,7 @@ namespace Stendotchi.Fragments
         {
             base.OnCreate(savedInstanceState);
             // Create your fragment here
+
         }
 
         public static Fragment1 NewInstance()
@@ -21,6 +25,24 @@ namespace Stendotchi.Fragments
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
+            View view = inflater.Inflate(Resource.Layout.fragment1, container, false);
+
+            Button buttonBathHome = view.FindViewById<Button>(Resource.Id.buttonBathHome);
+            Button buttonBedHome = view.FindViewById<Button>(Resource.Id.buttonBedHome);
+
+            var bathroom = new Intent(Activity, typeof(Bathroom));
+            var bedroom = new Intent(Activity, typeof(bedroom));
+
+            buttonBathHome.Click += delegate
+            {
+                StartActivity(bathroom);
+            };
+            buttonBedHome.Click += delegate
+            {
+                StartActivity(bedroom);
+                Toast.MakeText(this.Context, "Hello toast!", ToastLength.Short).Show();
+            };
+
             var ignored = base.OnCreateView(inflater, container, savedInstanceState);
             return inflater.Inflate(Resource.Layout.fragment1, null);
         }
