@@ -54,9 +54,17 @@
 			android:layout_alignParentRight="true"/>
 		<ImageButton
 			android:text="lvl"
-			android:layout_marginTop="55dp"
+			android:layout_marginTop="60dp"
 			android:layout_width="50dp"
 			android:layout_height="50dp"/>
+		<ImageButton
+			android:layout_marginTop="105dp"
+			android:layout_width="50dp"
+			android:layout_height="50dp"
+			android:id="@+id/homeknop" 
+			android:src="@mipmap/home"
+			android:scaleType="fitXY"
+			android:background="@null"/>
 
 		<android.support.design.widget.BottomNavigationView
 				android:minWidth="25px"

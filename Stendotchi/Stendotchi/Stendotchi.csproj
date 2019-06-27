@@ -98,8 +98,8 @@
     <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
     <AndroidResource Include="Resources\values\strings.xml" />
     <AndroidResource Include="Resources\values\styles.xml" />
-    <AndroidResource Include="Resources\mipmap-anydpi\ic_launcher.xml" />
-    <AndroidResource Include="Resources\mipmap-anydpi\ic_launcher_round.xml" />
+    <AndroidResource Include="Resources\mipmap-nodpi\ic_launcher.xml" />
+    <AndroidResource Include="Resources\mipmap-nodpi\ic_launcher_round.xml" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
@@ -263,34 +263,34 @@
     </AndroidResource>
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\shower.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\shower.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\sink.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\sink.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\knop.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\knop.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\knoplinks.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\knoplinks.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\knoprechts.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\knoprechts.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\testhaar1.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\testhaar1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\testHoofd1.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\testHoofd1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\testLegs1.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\testLegs1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\testTorso1.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\testTorso1.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\icon.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\CharCrea_activity_main.axml" />
@@ -302,10 +302,10 @@
     <AndroidResource Include="Resources\xml\file_paths.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\reminder.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\reminder.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\settings.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\settings.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\reminder.png" />
@@ -314,10 +314,22 @@
     <AndroidResource Include="Resources\drawable\settings.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\mipmap-anydpi\achtergrond.png" />
+    <AndroidResource Include="Resources\mipmap-nodpi\achtergrond.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\achtergrond.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-nodpi\achtergrond_kleiner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-nodpi\achtergrond_huge.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-nodpi\manneke.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-nodpi\home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

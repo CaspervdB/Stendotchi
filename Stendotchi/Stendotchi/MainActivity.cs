@@ -34,6 +34,13 @@ namespace Stendotchi
             {
                 StartActivity(typeof(ReminderMainActivity));
             };
+
+            ImageButton homeButton = FindViewById<ImageButton>(Resource.Id.homeknop);
+            homeButton.Click += delegate
+            {
+                LoadFragment(Resource.Id.home);
+            };
+
             var toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
             if (toolbar != null)
             {
