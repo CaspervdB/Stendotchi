@@ -2498,17 +2498,23 @@ namespace Stendotchi
 			// aapt resource value: 0x7f0900c8
 			public const int FirstShirts = 2131296456;
 			
-			// aapt resource value: 0x7f090103
-			public const int Gezondheid = 2131296515;
+			// aapt resource value: 0x7f09010c
+			public const int Gezondheid = 2131296524;
+			
+			// aapt resource value: 0x7f090100
+			public const int HeadView = 2131296512;
 			
 			// aapt resource value: 0x7f090097
 			public const int KopCharCreator = 2131296407;
 			
+			// aapt resource value: 0x7f090108
+			public const int LowerView = 2131296520;
+			
 			// aapt resource value: 0x7f090035
 			public const int META = 2131296309;
 			
-			// aapt resource value: 0x7f090105
-			public const int Minigames = 2131296517;
+			// aapt resource value: 0x7f09010e
+			public const int Minigames = 2131296526;
 			
 			// aapt resource value: 0x7f0900b5
 			public const int NewCharButtonsBody = 2131296437;
@@ -2525,8 +2531,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090037
 			public const int SYM = 2131296311;
 			
-			// aapt resource value: 0x7f090104
-			public const int Style = 2131296516;
+			// aapt resource value: 0x7f09010d
+			public const int Style = 2131296525;
 			
 			// aapt resource value: 0x7f0900ed
 			public const int TextLanguage = 2131296493;
@@ -2539,6 +2545,9 @@ namespace Stendotchi
 			
 			// aapt resource value: 0x7f0900f3
 			public const int TextVersion = 2131296499;
+			
+			// aapt resource value: 0x7f090104
+			public const int UpperView = 2131296516;
 			
 			// aapt resource value: 0x7f0900d5
 			public const int action0 = 2131296469;
@@ -2591,8 +2600,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09005c
 			public const int action_mode_close_button = 2131296348;
 			
-			// aapt resource value: 0x7f090106
-			public const int action_settings = 2131296518;
+			// aapt resource value: 0x7f09010f
+			public const int action_settings = 2131296527;
 			
 			// aapt resource value: 0x7f0900d4
 			public const int action_text = 2131296468;
@@ -2641,6 +2650,24 @@ namespace Stendotchi
 			
 			// aapt resource value: 0x7f0900ce
 			public const int bottom_navigation = 2131296462;
+			
+			// aapt resource value: 0x7f0900ff
+			public const int button1back = 2131296511;
+			
+			// aapt resource value: 0x7f090101
+			public const int button1next = 2131296513;
+			
+			// aapt resource value: 0x7f090103
+			public const int button2back = 2131296515;
+			
+			// aapt resource value: 0x7f090105
+			public const int button2next = 2131296517;
+			
+			// aapt resource value: 0x7f090107
+			public const int button3back = 2131296519;
+			
+			// aapt resource value: 0x7f090109
+			public const int button3next = 2131296521;
 			
 			// aapt resource value: 0x7f090063
 			public const int buttonPanel = 2131296355;
@@ -2894,6 +2921,12 @@ namespace Stendotchi
 			// aapt resource value: 0x7f0900e7
 			public const int linearLayout1 = 2131296487;
 			
+			// aapt resource value: 0x7f090102
+			public const int linearLayout2 = 2131296514;
+			
+			// aapt resource value: 0x7f090106
+			public const int linearLayout3 = 2131296518;
+			
 			// aapt resource value: 0x7f09001d
 			public const int listMode = 2131296285;
 			
@@ -2906,8 +2939,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f0900c9
 			public const int main_content = 2131296457;
 			
-			// aapt resource value: 0x7f090102
-			public const int masked = 2131296514;
+			// aapt resource value: 0x7f09010b
+			public const int masked = 2131296523;
 			
 			// aapt resource value: 0x7f0900d8
 			public const int media_actions = 2131296472;
@@ -3137,12 +3170,6 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09008b
 			public const int textView1 = 2131296395;
 			
-			// aapt resource value: 0x7f0900ff
-			public const int textView2 = 2131296511;
-			
-			// aapt resource value: 0x7f090100
-			public const int textView3 = 2131296512;
-			
 			// aapt resource value: 0x7f0900fa
 			public const int textViewDbResults = 2131296506;
 			
@@ -3215,8 +3242,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090016
 			public const int view_offset_helper = 2131296278;
 			
-			// aapt resource value: 0x7f090101
-			public const int visible = 2131296513;
+			// aapt resource value: 0x7f09010a
+			public const int visible = 2131296522;
 			
 			// aapt resource value: 0x7f09003c
 			public const int withText = 2131296316;

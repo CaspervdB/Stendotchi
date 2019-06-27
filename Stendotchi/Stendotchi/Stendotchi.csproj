@@ -82,12 +82,12 @@
     <Compile Include="Shirts.cs" />
     <Compile Include="ShirtsShop.cs" />
     <Compile Include="Shop.cs" />
+    <Compile Include="Wardrobe.cs" />
+    <Compile Include="WardrobeItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
-    <None Include="Properties\AndroidManifest.xml">
-      <SubType>Designer</SubType>
-    </None>
+    <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
