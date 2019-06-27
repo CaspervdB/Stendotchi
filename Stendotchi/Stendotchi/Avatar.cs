@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace Stendotchi
 {
-    /*class Avatar
+   class Avatar
     {
         private MainActivity _activity;
 
@@ -28,7 +28,7 @@ namespace Stendotchi
             this._activity = activity;
 
             // Initialize Wardrobe.
-            this._wardrobe = new Wardrobe();
+            _wardrobe = new Wardrobe();
 
             // Initialize Clothes.
             NextTopper();
@@ -61,7 +61,7 @@ namespace Stendotchi
             // Retrieve next.
             this._topper = this._wardrobe.GetNextTopper();
             // Update UI.
-            UpdateWardrobeUI(Resource.Id.AvatarTopper, this._topper);
+            UpdateWardrobeUI(Resource.Id.button1next, this._topper);
         }
 
         // Swap to the next UpperBody.
@@ -88,7 +88,7 @@ namespace Stendotchi
             // Retrieve next.
             this._topper = this._wardrobe.GetPreviousTopper();
             // Update UI.
-            UpdateWardrobeUI(Resource.Id.AvatarTopper, this._topper);
+            UpdateWardrobeUI(Resource.Id.button1next, this._topper);
         }
 
         // Swap to the previous UpperBody.
@@ -108,5 +108,5 @@ namespace Stendotchi
             // Update UI.
             UpdateWardrobeUI(Resource.Id.AvatarLowerBody, this._lowerBody);
         }
-    }*/
+    }
 }

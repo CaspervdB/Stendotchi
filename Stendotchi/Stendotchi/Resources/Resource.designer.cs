@@ -2489,8 +2489,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f0900c8
 			public const int FirstShirts = 2131296456;
 			
-			// aapt resource value: 0x7f090102
-			public const int Gezondheid = 2131296514;
+			// aapt resource value: 0x7f090103
+			public const int Gezondheid = 2131296515;
 			
 			// aapt resource value: 0x7f090097
 			public const int KopCharCreator = 2131296407;
@@ -2498,8 +2498,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090035
 			public const int META = 2131296309;
 			
-			// aapt resource value: 0x7f090104
-			public const int Minigames = 2131296516;
+			// aapt resource value: 0x7f090105
+			public const int Minigames = 2131296517;
 			
 			// aapt resource value: 0x7f0900b5
 			public const int NewCharButtonsBody = 2131296437;
@@ -2516,8 +2516,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090037
 			public const int SYM = 2131296311;
 			
-			// aapt resource value: 0x7f090103
-			public const int Style = 2131296515;
+			// aapt resource value: 0x7f090104
+			public const int Style = 2131296516;
 			
 			// aapt resource value: 0x7f0900ec
 			public const int TextLanguage = 2131296492;
@@ -2582,8 +2582,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09005c
 			public const int action_mode_close_button = 2131296348;
 			
-			// aapt resource value: 0x7f090105
-			public const int action_settings = 2131296517;
+			// aapt resource value: 0x7f090106
+			public const int action_settings = 2131296518;
 			
 			// aapt resource value: 0x7f0900d3
 			public const int action_text = 2131296467;
@@ -2882,6 +2882,15 @@ namespace Stendotchi
 			// aapt resource value: 0x7f0900e6
 			public const int linearLayout1 = 2131296486;
 			
+			// aapt resource value: 0x7f0900fe
+			public const int linearLayout2 = 2131296510;
+			
+			// aapt resource value: 0x7f0900ff
+			public const int linearLayout3 = 2131296511;
+			
+			// aapt resource value: 0x7f090100
+			public const int linearLayout4 = 2131296512;
+			
 			// aapt resource value: 0x7f09001d
 			public const int listMode = 2131296285;
 			
@@ -2894,8 +2903,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f0900c9
 			public const int main_content = 2131296457;
 			
-			// aapt resource value: 0x7f090101
-			public const int masked = 2131296513;
+			// aapt resource value: 0x7f090102
+			public const int masked = 2131296514;
 			
 			// aapt resource value: 0x7f0900d7
 			public const int media_actions = 2131296471;
@@ -3125,12 +3134,6 @@ namespace Stendotchi
 			// aapt resource value: 0x7f09008b
 			public const int textView1 = 2131296395;
 			
-			// aapt resource value: 0x7f0900fe
-			public const int textView2 = 2131296510;
-			
-			// aapt resource value: 0x7f0900ff
-			public const int textView3 = 2131296511;
-			
 			// aapt resource value: 0x7f0900f9
 			public const int textViewDbResults = 2131296505;
 			
@@ -3203,8 +3206,8 @@ namespace Stendotchi
 			// aapt resource value: 0x7f090016
 			public const int view_offset_helper = 2131296278;
 			
-			// aapt resource value: 0x7f090100
-			public const int visible = 2131296512;
+			// aapt resource value: 0x7f090101
+			public const int visible = 2131296513;
 			
 			// aapt resource value: 0x7f09003c
 			public const int withText = 2131296316;
@@ -4903,10 +4906,7 @@ namespace Stendotchi
 		{
 			
 			// aapt resource value: 0x7f070000
-			public const int file_paths = 2131165184;
-			
-			// aapt resource value: 0x7f070001
-			public const int xamarin_essentials_fileprovider_file_paths = 2131165185;
+			public const int xamarin_essentials_fileprovider_file_paths = 2131165184;
 			
 			static Xml()
 			{
