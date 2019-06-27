@@ -9,13 +9,14 @@ using Android.Widget;
 
 namespace Stendotchi
 {
-    [Activity(Label = "@string/app_name", MainLauncher = true, LaunchMode = Android.Content.PM.LaunchMode.SingleTop, Icon = "@mipmap/hart")]
+    [Activity(Label = "@string/app_name", MainLauncher = true, Icon = "@mipmap/hart")]
     public class MainActivity : AppCompatActivity
     {
-
         BottomNavigationView bottomNavigation;
         protected override void OnCreate(Bundle bundle)
         {
+            UserProfile.Current = new UserProfile();
+            UserProfile.Current.Initialize(BaseContext);
 
             System.Console.WriteLine("ping");
             RequestWindowFeature(WindowFeatures.NoTitle);

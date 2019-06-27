@@ -24,8 +24,6 @@ namespace Stendotchi
             base.OnCreate(savedInstanceState);
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             SetContentView(Resource.Layout.wardrobeLayout);
-
-
             this._avatar = new Avatar(this);
 
             // Create Events

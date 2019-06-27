@@ -82,6 +82,7 @@
     <Compile Include="Shirts.cs" />
     <Compile Include="ShirtsShop.cs" />
     <Compile Include="Shop.cs" />
+    <Compile Include="UserProfile.cs" />
     <Compile Include="Wardrobe.cs" />
     <Compile Include="WardrobeActivity.cs" />
     <Compile Include="WardrobeItem.cs" />
