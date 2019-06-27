@@ -27,12 +27,17 @@ namespace Stendotchi.Fragments
         {
             View view = inflater.Inflate(Resource.Layout.fragment1, container, false);
 
+            //BUTTONS OP DEZE MANIER WERKT NIET
+
+            //Verbind button in axml met cs code
             Button buttonBathHome = view.FindViewById<Button>(Resource.Id.buttonBathHome);
             Button buttonBedHome = view.FindViewById<Button>(Resource.Id.buttonBedHome);
 
+            //Set activity
             var bathroom = new Intent(Activity, typeof(Bathroom));
             var bedroom = new Intent(Activity, typeof(bedroom));
 
+            //Start activity bij indrukken van de knop
             buttonBathHome.Click += delegate
             {
                 StartActivity(bathroom);
