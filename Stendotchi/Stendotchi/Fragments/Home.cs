@@ -23,7 +23,7 @@ namespace Stendotchi.Fragments
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {
             var ignored = base.OnCreateView(inflater, container, savedInstanceState);
-            return inflater.Inflate(Resource.Layout.fragment3, null);
+            return inflater.Inflate(Resource.Layout.home, null);
         }
     }
 }

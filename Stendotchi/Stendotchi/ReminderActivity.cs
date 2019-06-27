@@ -64,25 +64,26 @@ namespace Stendotchi
                 if (perm == Android.Content.PM.Permission.Denied)
                 {
                     Toast.MakeText(this.ApplicationContext, 
-                        "Camera permission denied.", ToastLength.Long);
+                        "Camera permission denied.", ToastLength.Long).Show();
                     return;
                 }
 
                 if(perm == Android.Content.PM.Permission.Denied || perm == Android.Content.PM.Permission.Denied)
                 {
                     Toast.MakeText(this.ApplicationContext,
-                        "Storage permission(s) denied.", ToastLength.Long);
+                        "Storage permission(s) denied.", ToastLength.Long).Show();
                     return;
                 }
 
                 Toast.MakeText(this.ApplicationContext,
-                        "Camera permission given.", ToastLength.Long);
+                        "Camera permission given.", ToastLength.Long).Show();
 
                 await CrossMedia.Current.Initialize();
 
                 if (!CrossMedia.Current.IsCameraAvailable || !CrossMedia.Current.IsTakePhotoSupported)
                 {
-                    Toast.MakeText(this.ApplicationContext, "Camera unavailable", ToastLength.Short);
+                    
+                    Toast.MakeText(this.ApplicationContext, "Camera unavailable", ToastLength.Short).Show();
                     return;
                 }
 
@@ -96,13 +97,13 @@ namespace Stendotchi
                 if (file == null)
                     return;
 
-                Toast.MakeText(this.BaseContext, file.Path, ToastLength.Short);
+                Toast.MakeText(this.BaseContext, file.Path, ToastLength.Short).Show();
 
                 spinner.Visibility = ViewStates.Visible;
                 using (FileStream fs = new FileStream(file.Path, FileMode.Open))
                 {
                     var objects = await RestHelper.DetectObjects(fs);
-                    this.FindViewById<TextView>(Resource.Id.textView1).SetText(string.Join(", ", objects), TextView.BufferType.Normal);
+                    Toast.MakeText(this.BaseContext, string.Join(", ", objects), ToastLength.Short).Show();
                     spinner.Visibility = ViewStates.Invisible;
                     return;
                 }
