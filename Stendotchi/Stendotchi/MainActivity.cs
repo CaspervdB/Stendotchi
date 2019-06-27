@@ -15,9 +15,6 @@ namespace Stendotchi
         BottomNavigationView bottomNavigation;
         protected override void OnCreate(Bundle bundle)
         {
-            UserProfile.Current = new UserProfile();
-            UserProfile.Current.Initialize(BaseContext);
-
             System.Console.WriteLine("ping");
             RequestWindowFeature(WindowFeatures.NoTitle);
             base.OnCreate(bundle);
@@ -64,6 +61,9 @@ namespace Stendotchi
                 int mijnlvl = 7;
                 Toast.MakeText(this.BaseContext, $"Je bent momenteel level {mijnlvl}", ToastLength.Short).Show();
             };
+
+            UserProfile.Current = new UserProfile();
+            UserProfile.Current.Initialize(this);
 
             LoadFragment(Resource.Id.home);
         }

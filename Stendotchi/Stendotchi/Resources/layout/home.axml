@@ -6,14 +6,15 @@
 	android:background="@mipmap/achtergrond"
 	android:layout_height="fill_parent"
 	>
-	<ImageView
-		android:src="@mipmap/manneke"
-		android:layout_width="125dp"
-		android:layout_height="345.5dp"
+	<LinearLayout
+		android:id="@+id/charview"
+		android:layout_width="100dp"
+		android:layout_height="300dp"
 		android:layout_gravity="center_horizontal|bottom"
 		android:layout_weight="1"
 		android:layout_centerHorizontal="true"
 		android:layout_alignParentBottom="true"
 		android:gravity="bottom"
-		/>
+		android:layout_marginBottom="55dp"
+	/>
 </RelativeLayout>

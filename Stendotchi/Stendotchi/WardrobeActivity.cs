@@ -27,9 +27,19 @@ namespace Stendotchi
             this._avatar = new Avatar(this);
 
             // Create Events
-            SetOnClick(Resource.Id.AvatarTopper, this._avatar.NextTopper);
-            SetOnClick(Resource.Id.AvatarUpperBody, this._avatar.NextUpperBody);
-            SetOnClick(Resource.Id.AvatarLowerBody, this._avatar.NextLowerBody);
+            //SetOnClick(Resource.Id.AvatarTopper, this._avatar.NextTopper);
+            //SetOnClick(Resource.Id.AvatarUpperBody, this._avatar.NextUpperBody);
+            //SetOnClick(Resource.Id.AvatarLowerBody, this._avatar.NextLowerBody);
+
+            SetOnClick(Resource.Id.button1back, this._avatar.PreviousTopper);
+            SetOnClick(Resource.Id.button2back, this._avatar.PreviousUpperBody);
+            SetOnClick(Resource.Id.button3back, this._avatar.PreviousLowerBody);
+
+            SetOnClick(Resource.Id.button1next, this._avatar.NextTopper);
+            SetOnClick(Resource.Id.button2next, this._avatar.NextUpperBody);
+            SetOnClick(Resource.Id.button3next, this._avatar.NextLowerBody);
+
+            SetOnClick(Resource.Id.savecharacter, this._avatar.SaveCharacter);
         }
 
         private void SetOnClick(int resourceId, Action onClickFunction)

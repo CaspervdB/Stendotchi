@@ -26,41 +26,41 @@ namespace Stendotchi
             this.LowerBodies = new List<WardrobeItem>();
 
             // Fill Lists with WardrobeItem.
-            AddTopper("Head One", "head/hoofd1.svg");
-            AddTopper("Head Two", "head/hoofd2.svg");
-            AddTopper("Head Three", "head/hoofd3.svg");
+            AddTopper("Head One", Resource.Mipmap.hoofd1);
+            AddTopper("Head Two", Resource.Mipmap.hoofd2);
+            AddTopper("Head Three", Resource.Mipmap.hoofd3);
 
-            AddUpperBody("Short Sleeve Blue", "shirt/kortemouwBlauw.svg");
-            AddUpperBody("Short Sleeve Green", "shirt/kortemouwGroen.svg");
-            AddUpperBody("Short Sleeve Red", "shirt/kortemouwRood.svg");
-            AddUpperBody("Short Long Sleeve Red", "shirt/langemouwRood.svg");
-            AddUpperBody("Short Long Sleeve Green", "shirt/langemouwGroen.svg");
-            AddUpperBody("Short Long Sleeve Blue", "shirt/langemouwBlauw.svg");
+            AddUpperBody("Short Sleeve Blue", Resource.Mipmap.kortmouw1);
+            AddUpperBody("Short Sleeve Green", Resource.Mipmap.kortmouw3);
+            AddUpperBody("Short Sleeve Red", Resource.Mipmap.kortmouw2);
+            AddUpperBody("Short Long Sleeve Red", Resource.Mipmap.langmouw3);
+            AddUpperBody("Short Long Sleeve Green", Resource.Mipmap.langmouw2);
+            AddUpperBody("Short Long Sleeve Blue", Resource.Mipmap.langmouw1);
 
-            AddLowerBody("Shorts Blue", "jeans/kortebroekBlauw.svg");
-            AddLowerBody("Shorts Brown", "jeans/kortebroekBruin.svg");
-            AddLowerBody("Shorts Red", "jeans/kortebroekRood.svg");
-            AddLowerBody("Trousers Blue", "jeans/langebroekRood.svg");
-            AddLowerBody("Trousers Brown", "jeans/langebroekRood.svg");
-            AddLowerBody("Trousers Grey", "jeans/langebroekRood.svg");
+            AddLowerBody("Shorts Blue", Resource.Mipmap.kort3);
+            AddLowerBody("Shorts Brown", Resource.Mipmap.kort2);
+            AddLowerBody("Shorts Red", Resource.Mipmap.kort1);
+            AddLowerBody("Trousers Blue", Resource.Mipmap.lang2);
+            AddLowerBody("Trousers Brown", Resource.Mipmap.lang1);
+            AddLowerBody("Trousers Grey", Resource.Mipmap.lang3);
         }
 
         // Add a new Topper.
-        private void AddTopper(string name, string imagePath)
+        private void AddTopper(string name, int imagePath)
         {
             var item = new WardrobeItem(name, imagePath);
             this.Toppers.Add(item);
         }
 
         // Add a new UpperBody.
-        private void AddUpperBody(string name, string imagePath)
+        private void AddUpperBody(string name, int imagePath)
         {
             var item = new WardrobeItem(name, imagePath);
             this.UpperBodies.Add(item);
         }
 
         // Add a new LowerBody.
-        private void AddLowerBody(string name, string imagePath)
+        private void AddLowerBody(string name, int imagePath)
         {
             var item = new WardrobeItem(name, imagePath);
             this.LowerBodies.Add(item);
@@ -96,8 +96,8 @@ namespace Stendotchi
         // Get previous Topper and places it at the front of the list.
         public WardrobeItem GetPreviousTopper()
         {
-            var nextItem = this.Toppers[this.Toppers.Count - 1];
-            this.Toppers.RemoveAt(this.Toppers.Count - 1);
+            var nextItem = this.Toppers.Last();
+            this.Toppers.Remove(nextItem);
             this.Toppers.Insert(0, nextItem);
             return nextItem;
         }
@@ -105,8 +105,8 @@ namespace Stendotchi
         // Get previous UpperBody and places it at the front of the list.
         public WardrobeItem GetPreviousUpperBody()
         {
-            var nextItem = this.UpperBodies[this.UpperBodies.Count - 1];
-            this.UpperBodies.RemoveAt(this.UpperBodies.Count - 1);
+            var nextItem = this.UpperBodies.Last();
+            this.UpperBodies.Remove(nextItem);
             this.UpperBodies.Insert(0, nextItem);
             return nextItem;
         }
@@ -114,8 +114,8 @@ namespace Stendotchi
         // Get previous LowerBody and places it at the front of the list.
         public WardrobeItem GetPreviousLowerBody()
         {
-            var nextItem = this.LowerBodies[this.LowerBodies.Count - 1];
-            this.LowerBodies.RemoveAt(this.LowerBodies.Count - 1);
+            var nextItem = this.LowerBodies.Last();
+            this.LowerBodies.Remove(nextItem);
             this.LowerBodies.Insert(0, nextItem);
             return nextItem;
         }

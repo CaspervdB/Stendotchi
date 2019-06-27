@@ -1,6 +1,7 @@
 ﻿using Android.OS;
 using Android.Support.V4.App;
 using Android.Views;
+using Android.Widget;
 
 namespace Stendotchi.Fragments
 {
@@ -19,6 +20,14 @@ namespace Stendotchi.Fragments
             return frag3;
         }
 
+        public override void OnViewCreated(View view, Bundle savedInstanceState)
+        {
+            base.OnViewCreated(view, savedInstanceState);
+            var chv = view.FindViewById<LinearLayout>(Resource.Id.charview);
+            var charview = new CharacterView(view.Context);
+            charview.UpdateView();
+            chv.AddView(charview);
+        }
 
         public override View OnCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
         {

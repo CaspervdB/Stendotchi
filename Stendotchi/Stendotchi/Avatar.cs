@@ -36,10 +36,19 @@ namespace Stendotchi
             NextLowerBody();
         }
 
-        private void UpdateWardrobeUI(int resourceId, WardrobeItem item)
+        public void SaveCharacter()
         {
-            UpdateWardrobeItemText(resourceId, item.Name);
-            UpdateWardrobeItemImage(resourceId, item.ImagePath);
+            UserProfile.Current.CurrentTopper = this._topper.Mipmap;
+            UserProfile.Current.CurrentUpperbody = this._upperBody.Mipmap;
+            UserProfile.Current.CurrentLowerbody = this._lowerBody.Mipmap;
+            Toast.MakeText(_activity, "Jouw nieuwe Stendotchi is opgeslagen!", ToastLength.Short).Show();
+            _activity.Finish();
+        }
+
+        private void UpdateWardrobeUI(int resourceId, int textid, WardrobeItem item)
+        {
+            UpdateWardrobeItemText(textid, item.Name);
+            UpdateWardrobeItemImage(resourceId, item.Mipmap);
         }
 
         // Update UI text for WardrobeItem.
@@ -50,9 +59,10 @@ namespace Stendotchi
         }
 
         // Update UI img for WardrobeItem.
-        private void UpdateWardrobeItemImage(int resourceId, string path)
+        private void UpdateWardrobeItemImage(int resourceId, int mipmap)
         {
-            // TÖDO: Load correct image into UI
+            var img = this._activity.FindViewById<ImageView>(resourceId);
+            img.SetImageResource(mipmap);
         }
 
         // Swap to the next Topper.
@@ -61,7 +71,7 @@ namespace Stendotchi
             // Retrieve next.
             this._topper = this._wardrobe.GetNextTopper();
             // Update UI.
-            UpdateWardrobeUI(Resource.Id.button1next, this._topper);
+            UpdateWardrobeUI(Resource.Id.HeadView, Resource.Id.AvatarTopper, this._topper);
         }
 
         // Swap to the next UpperBody.
@@ -70,7 +80,7 @@ namespace Stendotchi
             // Retrieve next.
             this._upperBody = this._wardrobe.GetNextUpperBody();
             // Update UI.
-            UpdateWardrobeUI(Resource.Id.AvatarUpperBody, this._upperBody);
+            UpdateWardrobeUI(Resource.Id.UpperView, Resource.Id.AvatarUpperBody, this._upperBody);
         }
 
         // Swap to the next LowerBody.
@@ -79,7 +89,7 @@ namespace Stendotchi
             // Retrieve next.
             this._lowerBody = this._wardrobe.GetNextLowerBody();
             // Update UI.
-            UpdateWardrobeUI(Resource.Id.AvatarLowerBody, this._lowerBody);
+            UpdateWardrobeUI(Resource.Id.LowerView, Resource.Id.AvatarLowerBody, this._lowerBody);
         }
 
         // Swap to the previous Topper.
@@ -88,7 +98,7 @@ namespace Stendotchi
             // Retrieve next.
             this._topper = this._wardrobe.GetPreviousTopper();
             // Update UI.
-            UpdateWardrobeUI(Resource.Id.button1next, this._topper);
+            UpdateWardrobeUI(Resource.Id.HeadView, Resource.Id.AvatarTopper, this._topper);
         }
 
         // Swap to the previous UpperBody.
@@ -97,7 +107,7 @@ namespace Stendotchi
             // Retrieve next.
             this._upperBody = this._wardrobe.GetPreviousUpperBody();
             // Update UI.
-            UpdateWardrobeUI(Resource.Id.AvatarUpperBody, this._upperBody);
+            UpdateWardrobeUI(Resource.Id.UpperView, Resource.Id.AvatarUpperBody, this._upperBody);
         }
 
         // Swap to the previous LowerBody.
@@ -106,7 +116,7 @@ namespace Stendotchi
             // Retrieve next.
             this._lowerBody = this._wardrobe.GetPreviousLowerBody();
             // Update UI.
-            UpdateWardrobeUI(Resource.Id.AvatarLowerBody, this._lowerBody);
+            UpdateWardrobeUI(Resource.Id.LowerView, Resource.Id.AvatarLowerBody, this._lowerBody);
         }
     }
 }

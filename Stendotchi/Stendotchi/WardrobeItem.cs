@@ -15,12 +15,12 @@ namespace Stendotchi
     class WardrobeItem
     {
         public string Name;
-        public string ImagePath;
+        public int Mipmap;
 
-        public WardrobeItem(string name, string imagePath)
+        public WardrobeItem(string name, int mipmap)
         {
             this.Name = name;
-            this.ImagePath = imagePath;
+            this.Mipmap = mipmap;
         }
     }
 }
