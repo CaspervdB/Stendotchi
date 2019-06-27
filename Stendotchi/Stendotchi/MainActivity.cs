@@ -24,12 +24,12 @@ namespace Stendotchi
             //var bn = FindViewById<BottomNavigationView>(Resource.Id.bottom_navigation);
             //bn.InflateMenu(Resource.Menu.bottom_navigation_main);
 
-            Button settingsButton = FindViewById<Button>(Resource.Id.settings);
+            ImageButton settingsButton = FindViewById<ImageButton>(Resource.Id.settings);
             settingsButton.Click += delegate
             {
                 StartActivity(typeof(Settings));
             };
-            Button remindersButton = FindViewById<Button>(Resource.Id.reminders);
+            ImageButton remindersButton = FindViewById<ImageButton>(Resource.Id.reminders);
             remindersButton.Click += delegate
             {
                 StartActivity(typeof(ReminderMainActivity));
@@ -67,6 +67,10 @@ namespace Stendotchi
                     break;
                 case Resource.Id.Minigames:
                     fragment = Fragment3.NewInstance();
+                    break;
+                default:
+                case Resource.Id.home:
+                    fragment = Home.NewInstance();
                     break;
             }
             if (fragment == null)

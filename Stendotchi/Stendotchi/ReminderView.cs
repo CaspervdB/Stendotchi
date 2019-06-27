@@ -39,20 +39,20 @@ namespace Stendotchi
                     break;
 
                 case ReminderType.Eat:
-                    viewtype = " Food";
+                    viewtype = "Food";
                     break;
 
                 case ReminderType.Exercise:
-                    viewtype = " Exercise";
+                    viewtype = "Exercise";
                     break;
 
                 case ReminderType.Sleep:
-                    viewtype = " Sleep";
+                    viewtype = "Sleep";
                     break;
             }
 
             // create button and textview
-            this.Button = new Button(context) { Text = $"Open{viewtype}"};
+            this.Button = new Button(context) { Text = $"{viewtype} Reminder"};
             this.TextView = new TextView(context) { Text = reminder.text };
 
             // set button dimensions
