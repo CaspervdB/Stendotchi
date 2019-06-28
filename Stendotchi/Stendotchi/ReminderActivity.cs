@@ -142,8 +142,8 @@ namespace Stendotchi
                             break;
                     }
                     spinner.Visibility = ViewStates.Invisible;
-                    return;
                 }
+                File.Delete(file.Path);
             };
         }
     }

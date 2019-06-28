@@ -64,8 +64,8 @@ namespace Stendotchi
             // elke level is n * 50 xp
             var xp = this.UserXp;
 
-            int level = (xp - (xp % 500)) / 500;
-            int remaining = ((level + 1) * 500) - xp;
+            int level = (xp - (xp % 250)) / 250;
+            int remaining = ((level + 1) * 250) - xp;
             return (level, remaining);
         }
 
