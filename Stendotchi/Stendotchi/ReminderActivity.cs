@@ -106,7 +106,7 @@ namespace Stendotchi
                     switch((ReminderType)this.Intent.GetIntExtra("type", (int)ReminderType.Unknown))
                     {
                         case ReminderType.Drink:
-                            if (objects.Any(x => x.ToLower().Contains("water") || x.ToLower().Contains("bottle") || objects.Any(x => x.ToLower().Contains("jug"))))
+                            if (objects.Any(x => x.ToLower().Contains("water") || x.ToLower().Contains("bottle") || x.ToLower().Contains("jug")))
                             {
                                 // Ja! gedronken!
                                 UserProfile.Current.UserXp += 80;
