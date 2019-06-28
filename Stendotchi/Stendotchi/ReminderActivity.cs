@@ -118,7 +118,7 @@ namespace Stendotchi
                             break;
 
                         case ReminderType.Exercise:
-                            if(objects.Any(x => x.ToLower().Contains("bicycle")))
+                            if(objects.Any(x => x.ToLower().Contains("cycle") || x.ToLower().Contains("bike")))
                             {
                                 // Ja! gefietst!
                                 UserProfile.Current.UserXp += 200;
