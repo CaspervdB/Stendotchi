@@ -64,19 +64,9 @@ namespace Stendotchi
             // elke level is n * 50 xp
             var xp = this.UserXp;
 
-            int i = 0;
-            // max level is 100
-            int cxp = 0;
-
-            for(cxp = 0; cxp < xp; i++)
-            {
-                cxp += i * 50;
-                i += 1;
-            }
-
-            int remaining = ((i + 1) * 50) - (xp - cxp);
-
-            return (i, remaining);
+            int level = (xp - (xp % 500)) / 500;
+            int remaining = ((level + 1) * 500) - xp;
+            return (level, remaining);
         }
 
         public string Username
