@@ -115,6 +115,12 @@ namespace Stendotchi
                                     ToastLength.Short).Show();
                                 this.Finish();
                             }
+                            else
+                            {
+                                Toast.MakeText(this.BaseContext, $"Er is niks herkend, je krijgt geen punten.\n" +
+                                    $"Probeer het nog een keer!",
+                                    ToastLength.Short).Show();
+                            }
                             break;
 
                         case ReminderType.Exercise:
@@ -126,6 +132,12 @@ namespace Stendotchi
                                     $"\nJe nieuwe level is {UserProfile.Current.GetUserLevelAndRemainingXp().level}",
                                     ToastLength.Short).Show();
                                 this.Finish();
+                            }
+                            else
+                            {
+                                Toast.MakeText(this.BaseContext, $"Er is niks herkend, je krijgt geen punten.\n" +
+                                    $"Probeer het nog een keer!",
+                                    ToastLength.Short).Show();
                             }
                             break;
                     }
