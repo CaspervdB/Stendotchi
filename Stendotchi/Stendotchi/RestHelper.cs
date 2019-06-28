@@ -58,51 +58,13 @@ namespace Stendotchi
         public static IRestResponse Post(string baseUrl, string resourceUrl, string json)
         {
             var client = new RestClient(baseUrl);
-            var request = new RestRequest(resourceUrl, Method.POST);
-            request.Timeout = 20 * 1000; //added extra timeout		
+            var request = new RestRequest(resourceUrl, Method.POST)
+            {
+                Timeout = 20 * 1000 //added extra timeout		
+            };
             request.AddParameter("application/json", json, ParameterType.RequestBody);
             request.RequestFormat = DataFormat.Json;
             return client.Execute(request);
-        }
-
-        public static async Task<IRestResponse> PostAsync(string baseUrl, string resourceUrl, string json)
-        {
-            var client = new RestClient(baseUrl);
-            var request = new RestRequest(resourceUrl, Method.POST);
-            request.Timeout = 20 * 1000; //added extra timeout
-            request.AddParameter("application/json", json, ParameterType.RequestBody);
-            request.RequestFormat = DataFormat.Json;
-            return client.Execute(request);
-        }
-
-        public static async Task<IRestResponse> GetAsync(string baseUrl, string resourceUrl)
-        {
-            var client = new RestClient(baseUrl);
-            var request = new RestRequest(resourceUrl, Method.GET);
-            request.Timeout = 20 * 1000; //added extra timeout
-            //request.AddParameter("application/json", json, ParameterType.RequestBody);
-            request.RequestFormat = DataFormat.Json;
-            return client.Execute(request);
-        }
-
-        public static IRestResponse Get(string baseUrl, string resourceUrl)
-        {
-            var client = new RestClient(baseUrl);
-            var request = new RestRequest(resourceUrl, Method.GET);
-            request.Timeout = 20 * 1000; //added extra timeout		
-            //request.AddParameter("application/json", json, ParameterType.RequestBody);
-            request.RequestFormat = DataFormat.Json;
-            return client.Execute(request);
-        }
-
-        public static string ConvertObjectToJson(object arg)
-        {
-            return JsonConvert.SerializeObject(arg);
-        }
-
-        public static T ConvertJsonToObject<T>(string json)
-        {
-            return JsonConvert.DeserializeObject<T>(json);
         }
     }
 }

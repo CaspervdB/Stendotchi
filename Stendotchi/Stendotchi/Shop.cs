@@ -21,18 +21,18 @@ namespace Stendotchi
         public TextView dbResults;
 
 
-        private  List<ObjectDBSort> httpGet()
+        private  List<ObjectDBSort> HttpGet()
         {
             try
             {
                 List<ObjectDBSort> returnObject = new List<ObjectDBSort>();
-                var response = RestHelper.Get("https://resserver1.herokuapp.com", "getAllData");
+                //var response = RestHelper.Get("https://resserver1.herokuapp.com", "getAllData");
 
-                returnObject = JsonConvert.DeserializeObject<List<ObjectDBSort>>(response.Content);
+                //returnObject = JsonConvert.DeserializeObject<List<ObjectDBSort>>(response.Content);
 
-                return returnObject;
+                return null;
             }
-            catch(Exception e)
+            catch(Exception)
             {
                 return new List<ObjectDBSort>();
             }
@@ -54,7 +54,7 @@ namespace Stendotchi
             glassesButton = FindViewById<Button>(Resource.Id.glasses);
             dbResults = FindViewById<TextView>(Resource.Id.textViewDbResults);
 
-            List<ObjectDBSort> listObject = httpGet();
+            List<ObjectDBSort> listObject = HttpGet();
             foreach (ObjectDBSort obj in listObject)
             {
                 dbResults.Text += obj.id + obj.text;
@@ -93,7 +93,7 @@ namespace Stendotchi
         }
     }
 
-    public class shop : ShopMain
+    public class Shop : ShopMain
     {
     }
 }

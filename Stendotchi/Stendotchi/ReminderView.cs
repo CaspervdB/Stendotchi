@@ -19,9 +19,8 @@ namespace Stendotchi
     {
         public Button Button;
         public TextView TextView;
-        private Reminder r;
 
-        public Reminder reminder { get; private set; }
+        public Reminder Reminder { get; private set; }
 
         public delegate void OnReminderButton(Reminder reminder);
 
@@ -76,14 +75,14 @@ namespace Stendotchi
             this.LayoutParameters = new ViewGroup.LayoutParams(LayoutParams.WrapContent, 200);
 
             // set reminder property and event
-            this.reminder = reminder;
+            this.Reminder = reminder;
             this.Button.Click += Button_Click;
         }
 
         private void Button_Click(object sender, EventArgs e)
         {
             // invoke own OnReminder event on click of button
-            OnReminder.Invoke(this.reminder);
+            OnReminder.Invoke(this.Reminder);
         }
     }
 }
