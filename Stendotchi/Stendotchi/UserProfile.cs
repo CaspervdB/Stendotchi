@@ -22,7 +22,7 @@ namespace Stendotchi
             if (string.IsNullOrEmpty(init))
             {
                 Toast.MakeText(ctx, $"Nieuwe gebruiker", ToastLength.Short).Show();
-                showNewUserDialog(ctx);
+                ShowNewUserDialog(ctx);
 
                 this.CurrentTopper = 0;
                 this.CurrentUpperbody = 9;
@@ -37,7 +37,7 @@ namespace Stendotchi
             }
         }
 
-        private void showNewUserDialog(Activity ctx)
+        private void ShowNewUserDialog(Activity ctx)
         {
             LayoutInflater layoutInflater = LayoutInflater.From(ctx);
             View view = layoutInflater.Inflate(Resource.Layout.popupinput, null);
